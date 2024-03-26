@@ -2,8 +2,6 @@ package org.example;
 
 import org.example.Arrays.ArraysStriver;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Let us begin!");
@@ -35,7 +33,13 @@ public class Main {
         arraysStriver.intersectionOfTwoArrays(new int[]{1,2,3,5},new int[]{5,4,2,8},4,4);
         arraysStriver.findMissingElement(new int[]{1,3,4,5,6,7}, 6);
         arraysStriver.findNumberThatAppearsOnce(new int[]{1,1,2,2,3,4,4,5,5}, 9);
-        arraysStriver.findMaximumConsecutiveOnes(new int[]{1,2,4,5,1,1,1,1,5,1,1},11);
-        arraysStriver.longestSubarrayWithSumK(new int[]{},10);
+        arraysStriver.findMaximumConsecutiveOnes(new int[]{1,2,4,5,1,1,2,4,1,1},10);
+        arraysStriver.longestSubArrayWithSumKPositives(new int[]{2,3,5,1,9},10);
+        arraysStriver.longestSubArrayWithSumKNegatives(new int[]{-3,-5,-2,-1,-7,-2,-2,0,-1,-2,0,0,0,0,1,3,5},1);
+        arraysStriver.twoSum(new int[]{2,6,5,8,11},14);
+        arraysStriver.sort0and1and2(new int[]{2,0,2,1,1,0},6);
+        arraysStriver.majorityElementMoreThanNby2(new int[]{4,4,2,4,3,4,4,3,2,4},10);
+        arraysStriver.maximumSubArraySumKadene(new int[]{-2,1,-3,4,-1,2,1,-5,4},9);
+        arraysStriver.maximumSubArrayKadene(new int[]{-2,1,-3,4,-1,2,1,-5,4},9);
     }
 }
