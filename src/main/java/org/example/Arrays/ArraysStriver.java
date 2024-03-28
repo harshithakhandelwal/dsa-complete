@@ -1,15 +1,28 @@
 package org.example.Arrays;
 
+import org.example.CompanyInterviews.BigBasket;
+import org.example.Main;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+
+import static org.example.CompanyInterviews.BigBasket.reverse;
 
 public class ArraysStriver {
   public static void swap(int[] arr, int i, int j) {
     int temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
+  }
+
+  public static void reverseArray(int[] arr, int i, int j) {
+    while (i <= j) {
+      swap(arr, i, j);
+      i++;
+      j--;
+    }
   }
 
   public void largestElementInAnArray(int[] arr, int n) {
@@ -47,8 +60,10 @@ public class ArraysStriver {
     System.out.println(Arrays.toString(arr));
     boolean isSorted = true;
     for (int i = 0; i < n - 1; i++) {
-      if (arr[i] > arr[i + 1])
+      if (arr[i] > arr[i + 1]) {
         isSorted = false;
+        break;
+      }
     }
     System.out.println("Array is sorted?=" + isSorted);
   }
@@ -85,12 +100,10 @@ public class ArraysStriver {
     if (d > n)
       return;
     int[] temp = new int[d];
-    for (int i = 0; i < d; i++)
-      temp[i] = arr[i];
+    System.arraycopy(arr, 0, temp, 0, d);
     for (int i = 0; i < n - d; i++)
       arr[i] = arr[i + d];
-    for (int i = n - d; i < n; i++)
-      arr[i] = temp[i - n + d];
+    if (n - (n - d) >= 0) System.arraycopy(temp, -d + d, arr, n - d, n - (n - d));
     System.out.println(Arrays.toString(arr));
   }
 
@@ -271,12 +284,10 @@ public class ArraysStriver {
         swap(arr, mid, low);
         low++;
         mid++;
-      }
-      else if (arr[mid] == 1) {
+      } else if (arr[mid] == 1) {
         mid++;
-      }
-      else if(arr[mid]==2){
-        swap(arr,mid,high);
+      } else if (arr[mid] == 2) {
+        swap(arr, mid, high);
         high--;
       }
     }
@@ -287,54 +298,206 @@ public class ArraysStriver {
     System.out.println("Majority element in the array!");
     /* Moore's voting algorithm */
     System.out.println(Arrays.toString(arr));
-    if(n<=1)
+    if (n <= 1)
       return;
     int count = 1;
     int element = arr[0];
-    for(int i =1;i<n;i++){
-      if(arr[i]!=element)
+    for (int i = 1; i < n; i++) {
+      if (arr[i] != element)
         count--;
-      else if(count==0)
+      else if (count == 0)
         element = arr[i];
       else
         count++;
     }
-    System.out.println("Majority element is"+ element);
+    System.out.println("Majority element is" + element);
   }
 
   public void maximumSubArraySumKadene(int[] arr, int n) {
+    System.out.println("Maximum subarray sum!");
     System.out.println(Arrays.toString(arr));
     int sum = 0;
     int max = Integer.MIN_VALUE;
-    for(int i = 0; i<n; i++){
-      sum = sum+arr[i];
-      if(sum<0) {
+    for (int i = 0; i < n; i++) {
+      sum = sum + arr[i];
+      if (sum < 0) {
         sum = 0;
       }
-        max = Math.max(sum,max);
-      }
+      max = Math.max(sum, max);
+    }
     System.out.println("Max sum is " + max);
   }
+
   public void maximumSubArrayKadene(int[] arr, int n) {
+    System.out.println("Maximum subarray!");
     System.out.println(Arrays.toString(arr));
     int sum = 0;
     int max = Integer.MIN_VALUE;
     int start = -1;
     int end = -1;
-    for(int i = 0; i<n; i++){
+    for (int i = 0; i < n; i++) {
 
-      sum = sum+arr[i];
-      if(sum>max) {
+      sum = sum + arr[i];
+      if (sum > max) {
         max = sum;
-        end  = i;
+        end = i;
       }
-      if(sum<0) {
+      if (sum < 0) {
         sum = 0;
-        start = i+1;
+        start = i + 1;
       }
     }
     System.out.println("Array is as follows");
-    for(int i = start; i<=end;i++)
-      System.out.print(+ arr[i]+",");
+    for (int i = start; i <= end; i++)
+      System.out.print(+arr[i] + ",");
+  }
+
+  public void bestTimeToBuyAndSellStock(int[] arr, int n) {
+    System.out.println("Best time to buy and sell stock!");
+    if (n < 2)
+      return;
+    int buy = arr[0];
+    int sell = 0;
+    int profit = 0;
+    for (int i = 1; i < n; i++) {
+      if (arr[i] < buy)
+        buy = arr[i];
+      else if (arr[i] > sell && arr[i] > buy)
+        sell = arr[i];
+    }
+    if (sell == 0)
+      System.out.println("cannot find profits!");
+    else
+      System.out.println("Profit=" + (sell - buy));
+
+  }
+
+  public void rotateMatrixBy90(int[][] arr, int m, int n) {
+    System.out.println("Rotate a matrix by 90!");
+    for (int i = 0; i < m; i++) {
+      for (int j = 0; j < n; j++) {
+        System.out.print(arr[i][j] + " ");
+      }
+      System.out.println();
+    }
+    for (int i = 0; i < m; i++) {
+      for (int j = i; j < n; j++) {
+        if (i != j)
+          BigBasket.swap(arr, i, j);
+      }
+    }
+    for (int i = 0; i < m; i++) {
+      for (int j = 0; j < n / 2; j++) {
+        reverse(arr, i, j, n);
+      }
+    }
+    for (int i = 0; i < m; i++) {
+      for (int j = 0; j < n; j++) {
+        System.out.print(arr[i][j] + " ");
+      }
+      System.out.println();
+    }
+  }
+
+  public void rearrangeBySign(int[] arr, int n) {
+    System.out.println("Rearrange equal elements by sign!");
+    int[] solArray = new int[n];
+    int posIndex = 0;
+    int negIndex = 1;
+    for (int i = 0; i < n; i++) {
+      if (arr[i] > 0) {
+        solArray[posIndex] = arr[i];
+        posIndex += 2;
+      } else if (arr[i] < 0) {
+        solArray[negIndex] = arr[i];
+        negIndex += 2;
+      }
+    }
+    System.out.println(Arrays.toString(solArray));
+  }
+
+  public void rearrangeBySignUnequal(int[] arr, int n) {
+    System.out.println("Rearrange unequal elements by sign!");
+    ArrayList<Integer> pos = new ArrayList<>();
+    ArrayList<Integer> neg = new ArrayList<>();
+    int itrn = n;
+    int flag = -1;
+    for (int i = 0; i < n; i++) {
+      if (arr[i] > 0) {
+        pos.add(arr[i]);
+      } else {
+        neg.add(arr[i]);
+      }
+    }
+    if (pos.size() < neg.size()) {
+      itrn = pos.size();
+    } else if (pos.size() > neg.size()) {
+      itrn = neg.size();
+      flag = 1;
+    }
+
+    for (int i = 0; i < itrn; i++) {
+      arr[2 * i] = pos.get(i);
+      arr[2 * i + 1] = neg.get(i);
+    }
+    //TO-D0 add separation
+    System.out.println(Arrays.toString(arr));
+  }
+
+  public void nextPermutation(int[] arr, int n) {
+    System.out.println("Print next permutation of" +Arrays.toString(arr));
+    int breakpoint = -1;
+    for (int i = n - 2; i > 0; i--) {
+      if (arr[i] < arr[i + 1]) {
+        breakpoint = i;
+        break;
+      }
+    }
+    if (breakpoint == -1)
+      reverseArray(arr, 0, n);
+
+    for (int i = n - 1; i > breakpoint; i--) {
+      if (arr[i] > arr[breakpoint]) {
+        swap(arr, breakpoint, i);
+        break;
+      }
+    }
+    reverseArray(arr, breakpoint + 1, n - 1);
+    System.out.println(Arrays.toString(arr));
+  }
+
+  public void leadersInAnArray(int[] arr, int n) {
+    System.out.println("Leaders in an array"+ Arrays.toString(arr));
+    int cleader = arr[n - 1];
+    for (int i = n - 1; i > 0; i--) {
+      if (arr[i] >= cleader) {
+        cleader = arr[i];
+        System.out.print(cleader + " ");
+      }
+    }
+  }
+
+  public void lengthOfLongestConsecutiveElements(int[] arr, int n) {
+    System.out.println("Length of longest consecutive elements in"+ Arrays.toString(arr));
+    HashSet<Integer> hashSet = new HashSet<>();
+    if(n==0)
+      return;;
+    int maxLen = 1;
+    for (int i = 0; i < n; i++)
+      hashSet.add(arr[i]);
+    for (int i : hashSet) {
+      if (!hashSet.contains(i- 1)) {
+        int count = 1;
+        int index = i;
+        while (hashSet.contains(index + 1)) {
+          index++;
+          count++;
+        }
+        maxLen = Math.max(maxLen, count);
+      }
+    }
+    System.out.println("Length"+maxLen);
   }
 }
+
+

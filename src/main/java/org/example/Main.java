@@ -1,22 +1,14 @@
 package org.example;
 
 import org.example.Arrays.ArraysStriver;
+import org.example.CompanyInterviews.BigBasket;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Let us begin!");
-//        System.out.println("Choose your concept:");
-//        Scanner scanner = new Scanner(System.in);
-//        int choice = scanner.nextInt();
-//        switch (choice) {
-//            case 1:
-//                System.out.println("Arrays:");
-//                arrays();
-//                break;
-//            default: arrays();
-//
-//        }
         arrays();
+        bigBasket();
+
     }
 
     public  static void arrays(){
@@ -41,5 +33,22 @@ public class Main {
         arraysStriver.majorityElementMoreThanNby2(new int[]{4,4,2,4,3,4,4,3,2,4},10);
         arraysStriver.maximumSubArraySumKadene(new int[]{-2,1,-3,4,-1,2,1,-5,4},9);
         arraysStriver.maximumSubArrayKadene(new int[]{-2,1,-3,4,-1,2,1,-5,4},9);
+        arraysStriver.bestTimeToBuyAndSellStock(new int[]{7,6,3,1,14},5);
+        arraysStriver.rotateMatrixBy90(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}},4,4);
+        arraysStriver.rearrangeBySign(new int[]{1,2,-4,-5},4);
+        arraysStriver.rearrangeBySignUnequal(new int[]{1,2,-5,-3,-4,-7},6);
+        arraysStriver.nextPermutation(new int[]{2,1,5,4,3,0,0},7);
+        arraysStriver.leadersInAnArray(new int[]{10,22,12,3,0,6},6);
+        arraysStriver.lengthOfLongestConsecutiveElements(new int[]{100,200,1,3,2,4},6);
+    }
+    public static void bigBasket(){
+        BigBasket bigBasket = new BigBasket();
+        bigBasket.findMinAndMaxOfAnArray(new int[]{1,1,1,1,1},5);
+        bigBasket.bestTimeToBuyAndSellStock(new int[]{7,6,3,1,14},5);
+        bigBasket.moveAllZerosToRight(new int[]{1,2,0,0,5,7,0,0},8);
+        bigBasket.removeAnElement(new int[]{1,2,3,3,5,7,3,0},8,3);
+        bigBasket.makeAllElementsOfArrayEqual(new int[]{1,5,7,10},4);
+        bigBasket.rotateMatrixBy90(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}},4,4);
+        bigBasket.longestSubStringWithUniqueCharacters("abcabcbb");
     }
 }
