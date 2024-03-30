@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Let us begin!");
         arrays();
-        bigBasket();
+        //bigBasket();
 
     }
 
@@ -40,6 +40,12 @@ public class Main {
         arraysStriver.nextPermutation(new int[]{2,1,5,4,3,0,0},7);
         arraysStriver.leadersInAnArray(new int[]{10,22,12,3,0,6},6);
         arraysStriver.lengthOfLongestConsecutiveElements(new int[]{100,200,1,3,2,4},6);
+        arraysStriver.printMatrixInSpiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}});
+        arraysStriver.countSubArraysWithSumK(new int[]{3,1,2,4},6);
+        arraysStriver.pascalsTriangle(6);
+        arraysStriver.longestSubArrayWithSumZero(new int[]{1,2,-2,4,-4});
+        arraysStriver.maximumProductSubArray(new int[]{-3,-1,-1,-4,-5},5);
+
     }
     public static void bigBasket(){
         BigBasket bigBasket = new BigBasket();

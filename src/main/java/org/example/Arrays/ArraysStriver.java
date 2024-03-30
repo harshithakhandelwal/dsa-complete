@@ -498,6 +498,114 @@ public class ArraysStriver {
     }
     System.out.println("Length"+maxLen);
   }
-}
+  public void printMatrixInSpiralOrder(int[][] matrix) {
+    int rows = matrix.length;
+    int cols = matrix[0].length;
+    int left = 0;
+    int top = 0;
+    int right = cols - 1;
+    int bottom = rows - 1;
+    ArrayList<Integer> ans = new ArrayList<>();
+    while (left <= right && top <= bottom) {
+      for (int i = left; i <= right; i++) {
+        ans.add(matrix[top][i]);
+      }
+      top++;
+      for (int i = top; i <= bottom; i++) {
+        ans.add(matrix[i][right]);
+      }
+      right--;
+      if (top <= bottom) {
+        for (int i = right; i >= left; i--) {
+          ans.add(matrix[bottom][i]);
+        }
+        bottom--;
+      }
+      if (left <= right) {
+        for (int i = bottom; i >= top; i--) {
+          ans.add(matrix[i][left]);
+        }
+        left++;
+      }
+    }
+    System.out.println(ans);
+  }
+
+  public void countSubArraysWithSumK(int[] arr, int k){
+    int preSum = 0;
+     int count = 0;
+     HashMap<Integer,Integer> hashMap = new HashMap<>();
+     hashMap.put(0,1);
+     for(int i=0;i<arr.length;i++){
+       preSum = preSum +arr[i];
+       int rem = preSum-k;
+       count = count + hashMap.getOrDefault(rem,0);
+       hashMap.put(preSum,hashMap.getOrDefault(preSum,0)+1);
+     }
+    System.out.println(count);
+  }
+  public void pascalsTriangle(int n){
+    ArrayList<ArrayList<Integer>> pascals = new ArrayList<>();
+    for (int i = 1; i<=n;i++){
+      pascals.add(generateRow(i));
+    }
+    pascals.forEach(System.out::println);
+  }
+
+  public ArrayList<Integer> generateRow(int n){
+    ArrayList<Integer> row = new ArrayList<>();
+    long ans = 1;
+    row.add((int) ans);
+    for(int i = 1; i<n;i++)
+    {
+      ans = ans * (n-i);
+      ans = ans/ i;
+      row.add((int) ans);
+    }
+    return row;
+  }
+
+  public void majorityElementN3(int[] arr){
+
+  }
+
+  public void longestSubArrayWithSumZero(int[] arr){
+    int preSum = 0;
+    int maximum = 0;
+    HashMap<Integer,Integer> map = new HashMap<>();
+    for(int i = 0;i<arr.length;i++){
+      preSum = preSum + arr[i];
+      if(preSum == 0)
+        maximum = i +1;
+      else if (map.get(preSum)!=null) {
+        maximum = Math.max(maximum, i-map.get(preSum));
+      }
+      else
+        map.put(preSum,i);
+      }
+    System.out.println("Maximum is" + maximum);
+    }
+
+    public void maximumProductSubArray(int[] arr,int n){
+      int prefix = 1;
+      int suffix = 1;
+      int maximum = Integer.MIN_VALUE;
+      for(int i = 0; i<n;i++){
+        if(prefix == 0)
+          prefix = 1;
+        if(suffix == 0)
+          suffix = 1;
+        prefix = prefix*arr[i];
+        suffix = suffix*arr[n-i-1];
+        maximum = Math.max(maximum,Math.max(prefix,suffix));
+      }
+      System.out.println(maximum);
+    }
+
+    public void findMissingAndRepeatingNumber(int[] arr, int n){
+    }
+
+  }
+
 
 
