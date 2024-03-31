@@ -3,10 +3,7 @@ package org.example.Arrays;
 import org.example.CompanyInterviews.BigBasket;
 import org.example.Main;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 import static org.example.CompanyInterviews.BigBasket.reverse;
 
@@ -565,8 +562,39 @@ public class ArraysStriver {
     return row;
   }
 
-  public void majorityElementN3(int[] arr){
-
+  public void majorityElementN3(int[] arr,int n) {
+    int count1 = 0;
+    int element1 = Integer.MIN_VALUE;
+    int count2 = 0;
+    int element2 = Integer.MIN_VALUE;
+    int n3 = (n/3);
+    for (int i = 0; i < n; i++) {
+      if (count1 == 0 && arr[i] != element2) {
+        count1++;
+        element1 = arr[i];
+      }
+      else if (count2 == 0 && arr[i] != element1) {
+        count2++;
+        element2 = arr[i];
+      }
+      else if (element1 == arr[i])
+        count1++;
+      else if (element2 == arr[i])
+        count2++;
+      else {
+        count1--;
+        count2--;
+      }
+    }
+    int cnt1 = 0; int cnt2 = 0;
+    for (int i = 0; i < n; i++) {
+      if (arr[i] == element1)
+        cnt1++;
+      if(arr[i] == element2)
+        cnt2++;
+    }
+    if(cnt1>n3) System.out.println(element1);
+    if(cnt2>n3) System.out.println(element2);
   }
 
   public void longestSubArrayWithSumZero(int[] arr){
@@ -602,6 +630,11 @@ public class ArraysStriver {
       System.out.println(maximum);
     }
 
+    public void threeSumProblem(int[] arr,int n) {
+      //brute is to loop three times and find all combi
+      //better is to use a hash for summation of two elements minus the third and keeping it in set data to get only unique sorted pairs
+      Arrays.sort(arr);
+    }
     public void findMissingAndRepeatingNumber(int[] arr, int n){
     }
 
