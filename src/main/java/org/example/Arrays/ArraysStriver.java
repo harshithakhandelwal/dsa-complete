@@ -1,7 +1,6 @@
 package org.example.Arrays;
 
 import org.example.CompanyInterviews.BigBasket;
-import org.example.Main;
 
 import java.util.*;
 
@@ -442,7 +441,7 @@ public class ArraysStriver {
   }
 
   public void nextPermutation(int[] arr, int n) {
-    System.out.println("Print next permutation of" +Arrays.toString(arr));
+    System.out.println("Print next permutation of" + Arrays.toString(arr));
     int breakpoint = -1;
     for (int i = n - 2; i > 0; i--) {
       if (arr[i] < arr[i + 1]) {
@@ -464,7 +463,7 @@ public class ArraysStriver {
   }
 
   public void leadersInAnArray(int[] arr, int n) {
-    System.out.println("Leaders in an array"+ Arrays.toString(arr));
+    System.out.println("Leaders in an array" + Arrays.toString(arr));
     int cleader = arr[n - 1];
     for (int i = n - 1; i > 0; i--) {
       if (arr[i] >= cleader) {
@@ -475,15 +474,15 @@ public class ArraysStriver {
   }
 
   public void lengthOfLongestConsecutiveElements(int[] arr, int n) {
-    System.out.println("Length of longest consecutive elements in"+ Arrays.toString(arr));
+    System.out.println("Length of longest consecutive elements in" + Arrays.toString(arr));
     HashSet<Integer> hashSet = new HashSet<>();
-    if(n==0)
-      return;;
+    if (n == 0)
+      return;
     int maxLen = 1;
     for (int i = 0; i < n; i++)
       hashSet.add(arr[i]);
     for (int i : hashSet) {
-      if (!hashSet.contains(i- 1)) {
+      if (!hashSet.contains(i - 1)) {
         int count = 1;
         int index = i;
         while (hashSet.contains(index + 1)) {
@@ -493,8 +492,9 @@ public class ArraysStriver {
         maxLen = Math.max(maxLen, count);
       }
     }
-    System.out.println("Length"+maxLen);
+    System.out.println("Length" + maxLen);
   }
+
   public void printMatrixInSpiralOrder(int[][] matrix) {
     int rows = matrix.length;
     int cols = matrix[0].length;
@@ -528,56 +528,54 @@ public class ArraysStriver {
     System.out.println(ans);
   }
 
-  public void countSubArraysWithSumK(int[] arr, int k){
+  public void countSubArraysWithSumK(int[] arr, int k) {
     int preSum = 0;
-     int count = 0;
-     HashMap<Integer,Integer> hashMap = new HashMap<>();
-     hashMap.put(0,1);
-     for(int i=0;i<arr.length;i++){
-       preSum = preSum +arr[i];
-       int rem = preSum-k;
-       count = count + hashMap.getOrDefault(rem,0);
-       hashMap.put(preSum,hashMap.getOrDefault(preSum,0)+1);
-     }
+    int count = 0;
+    HashMap<Integer, Integer> hashMap = new HashMap<>();
+    hashMap.put(0, 1);
+    for (int i = 0; i < arr.length; i++) {
+      preSum = preSum + arr[i];
+      int rem = preSum - k;
+      count = count + hashMap.getOrDefault(rem, 0);
+      hashMap.put(preSum, hashMap.getOrDefault(preSum, 0) + 1);
+    }
     System.out.println(count);
   }
-  public void pascalsTriangle(int n){
+
+  public void pascalsTriangle(int n) {
     ArrayList<ArrayList<Integer>> pascals = new ArrayList<>();
-    for (int i = 1; i<=n;i++){
+    for (int i = 1; i <= n; i++) {
       pascals.add(generateRow(i));
     }
     pascals.forEach(System.out::println);
   }
 
-  public ArrayList<Integer> generateRow(int n){
+  public ArrayList<Integer> generateRow(int n) {
     ArrayList<Integer> row = new ArrayList<>();
     long ans = 1;
     row.add((int) ans);
-    for(int i = 1; i<n;i++)
-    {
-      ans = ans * (n-i);
-      ans = ans/ i;
+    for (int i = 1; i < n; i++) {
+      ans = ans * (n - i);
+      ans = ans / i;
       row.add((int) ans);
     }
     return row;
   }
 
-  public void majorityElementN3(int[] arr,int n) {
+  public void majorityElementN3(int[] arr, int n) {
     int count1 = 0;
     int element1 = Integer.MIN_VALUE;
     int count2 = 0;
     int element2 = Integer.MIN_VALUE;
-    int n3 = (n/3);
+    int n3 = (n / 3);
     for (int i = 0; i < n; i++) {
       if (count1 == 0 && arr[i] != element2) {
         count1++;
         element1 = arr[i];
-      }
-      else if (count2 == 0 && arr[i] != element1) {
+      } else if (count2 == 0 && arr[i] != element1) {
         count2++;
         element2 = arr[i];
-      }
-      else if (element1 == arr[i])
+      } else if (element1 == arr[i])
         count1++;
       else if (element2 == arr[i])
         count2++;
@@ -586,59 +584,269 @@ public class ArraysStriver {
         count2--;
       }
     }
-    int cnt1 = 0; int cnt2 = 0;
+    int cnt1 = 0;
+    int cnt2 = 0;
     for (int i = 0; i < n; i++) {
       if (arr[i] == element1)
         cnt1++;
-      if(arr[i] == element2)
+      if (arr[i] == element2)
         cnt2++;
     }
-    if(cnt1>n3) System.out.println(element1);
-    if(cnt2>n3) System.out.println(element2);
+    if (cnt1 > n3) System.out.println(element1);
+    if (cnt2 > n3) System.out.println(element2);
   }
 
-  public void longestSubArrayWithSumZero(int[] arr){
+  public void longestSubArrayWithSumZero(int[] arr) {
     int preSum = 0;
     int maximum = 0;
-    HashMap<Integer,Integer> map = new HashMap<>();
-    for(int i = 0;i<arr.length;i++){
+    HashMap<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < arr.length; i++) {
       preSum = preSum + arr[i];
-      if(preSum == 0)
-        maximum = i +1;
-      else if (map.get(preSum)!=null) {
-        maximum = Math.max(maximum, i-map.get(preSum));
-      }
-      else
-        map.put(preSum,i);
-      }
+      if (preSum == 0)
+        maximum = i + 1;
+      else if (map.get(preSum) != null) {
+        maximum = Math.max(maximum, i - map.get(preSum));
+      } else
+        map.put(preSum, i);
+    }
     System.out.println("Maximum is" + maximum);
-    }
+  }
 
-    public void maximumProductSubArray(int[] arr,int n){
-      int prefix = 1;
-      int suffix = 1;
-      int maximum = Integer.MIN_VALUE;
-      for(int i = 0; i<n;i++){
-        if(prefix == 0)
-          prefix = 1;
-        if(suffix == 0)
-          suffix = 1;
-        prefix = prefix*arr[i];
-        suffix = suffix*arr[n-i-1];
-        maximum = Math.max(maximum,Math.max(prefix,suffix));
+  public void maximumProductSubArray(int[] arr, int n) {
+    int prefix = 1;
+    int suffix = 1;
+    int maximum = Integer.MIN_VALUE;
+    for (int i = 0; i < n; i++) {
+      if (prefix == 0)
+        prefix = 1;
+      if (suffix == 0)
+        suffix = 1;
+      prefix = prefix * arr[i];
+      suffix = suffix * arr[n - i - 1];
+      maximum = Math.max(maximum, Math.max(prefix, suffix));
+    }
+    System.out.println(maximum);
+  }
+
+  public void countSubarraysWithXORK(int[] arr, int n, int k) {
+    int pre = 0;
+    int count = 0;
+    HashMap<Integer, Integer> map = new HashMap<>();
+    map.put(0, 1);
+    for (int i = 0; i < n; i++) {
+      pre = pre ^ arr[i];
+      int rem = pre ^ k;
+      count = count + map.getOrDefault(rem, 0);
+      map.put(pre, map.getOrDefault(pre, 0) + 1);
+    }
+    System.out.println(count);
+  }
+
+  public void mergeOverlappingIntervals(int[][] arr) {
+    System.out.println(Arrays.deepToString(arr));
+    List<List<Integer>> res = new ArrayList<>();
+    Arrays.sort(arr, Comparator.comparingInt(a -> a[0]));
+
+    for (int i = 0; i < arr.length; i++) {
+      if (res.isEmpty() || arr[i][0] > res.get(res.size() - 1).get(1))
+        res.add(Arrays.asList(arr[i][0], arr[i][1]));
+      else
+        res.get(res.size() - 1).set(1, Math.max(res.get(res.size() - 1).get(1), arr[i][1]));
+    }
+    System.out.println(res);
+  }
+
+  public void mergeSortedArraysUsingThirdArray(int[] arr1, int[] arr2) {
+    System.out.println(Arrays.toString(arr1) + " " + Arrays.toString(arr2));
+    long[] arr3 = new long[arr1.length + arr2.length];
+    int left = 0;
+    int right = 0;
+    int index = 0;
+    while (left < arr1.length && right < arr2.length) {
+      if (arr1[left] <= arr2[right]) {
+        arr3[index] = arr1[left];
+        left++;
+        index++;
+      } else {
+        arr3[index] = arr2[right];
+        right++;
+        index++;
       }
-      System.out.println(maximum);
     }
+    while (left < arr1.length)
+      arr3[index++] = arr1[left++];
+    while (right < arr2.length)
+      arr3[index++] = arr2[right++];
+    System.out.println(Arrays.toString(arr3));
+  }
 
-    public void threeSumProblem(int[] arr,int n) {
-      //brute is to loop three times and find all combi
-      //better is to use a hash for summation of two elements minus the third and keeping it in set data to get only unique sorted pairs
-      Arrays.sort(arr);
+  public void mergeSortedArraysWithoutUsingThirdArray(int[] arr1, int[] arr2) {
+    System.out.println(Arrays.toString(arr1) + " " + Arrays.toString(arr2));
+    int left = arr1.length - 1;
+    int right = 0;
+    while (left >= 0 && right < arr2.length) {
+      if (arr1[left] > arr2[right]) {
+        int temp = arr1[left];
+        arr1[left] = arr2[right];
+        arr2[right] = temp;
+        left--;
+        right++;
+      } else
+        break;
     }
-    public void findMissingAndRepeatingNumber(int[] arr, int n){
+    Arrays.sort(arr1);
+    Arrays.sort(arr2);
+    System.out.println(Arrays.toString(arr1) + " " + Arrays.toString(arr2));
+  }
+
+  public void threeSumProblem(int[] arr, int n) {
+    //brute is to loop three times and find all combi
+    //better is to use a hash for summation of two elements minus the third and keeping it in set data to get only unique sorted pairs
+    List<List<Integer>> ans = new ArrayList<>();
+    Arrays.sort(arr);
+    for (int i = 0; i < n; i++) {
+      if (i != 0 && arr[i] == arr[i - 1]) continue;
+      int j = i + 1;
+      int k = n - 1;
+      while (j < k) {
+        int sum = arr[i] + arr[j] + arr[k];
+        if (sum < 0)
+          j++;
+        else if (sum > 0)
+          k--;
+        else {
+          List<Integer> integers = Arrays.asList(arr[i], arr[j], arr[k]);
+          ans.add(integers);
+          j++;
+          k--;
+          while (j < k && arr[j] == arr[j - 1]) j++;
+          while (j < k && arr[k] == arr[k + 1]) k--;
+        }
+      }
     }
+    System.out.println(ans);
+  }
+
+  public void fourSumProblem(int[] arr, int n, int target) {
+    System.out.println("Original array=" + Arrays.toString(arr));
+    List<List<Integer>> ans = new ArrayList<>();
+    Arrays.sort(arr);
+    System.out.println("After sorting=" + Arrays.toString(arr));
+    for (int i = 0; i < n; i++) {
+      if (i != 0 && arr[i] == arr[i - 1]) continue;
+      for (int j = i + 1; j < n; j++) {
+        if (j != i + 1 && arr[j] == arr[j - 1]) continue;
+        int k = j + 1;
+        int l = n - 1;
+        while (k < l) {
+          int sum = arr[i] + arr[j] + arr[k];
+          sum = sum + arr[l];
+          if (sum < target)
+            k++;
+          else if (sum > target)
+            l--;
+          else {
+            List<Integer> integers = Arrays.asList(arr[i], arr[j], arr[k], arr[l]);
+            ans.add(integers);
+            k++;
+            l--;
+            while (k < l && arr[k] == arr[k - 1]) k++;
+            while (k < l && arr[l] == arr[l + 1]) l--;
+          }
+        }
+      }
+    }
+    System.out.println(ans);
+
 
   }
+
+  public void findMissingAndRepeatingNumber(int[] arr, int n) {
+    int expectedSum = (n * (n + 1)) / 2;
+    int expectedSquare = (n * (n + 1) * (2 * n + 1)) / 6;
+    int actualSum = 0;
+    int actualSquare = 0;
+    for (int i = 0; i < n; i++) {
+      actualSum += arr[i];
+      actualSquare += arr[i] * arr[i];
+    }
+    int xminusy = expectedSum - actualSum;
+    int x2minusy2 = expectedSquare - actualSquare;
+    int xplusy = x2minusy2 / xminusy;
+    int missing = (xminusy + xplusy) / 2;
+    int repeating = missing - xminusy;
+
+    System.out.println(missing + " " + repeating);
+  }
+  public int countInversions(int[] arr,int low, int high){
+    //application of merge sort
+    int count = 0;
+    if(low>=high) return count;
+    int mid = (low+high)/2;
+    count += countInversions(arr,low,mid);
+    count += countInversions(arr,mid+1,high);
+    count += merge(arr,low,mid,high);
+    return count;
+  }
+  public int merge(int[] arr, int low, int mid, int high){
+    int left = low;
+    int right = mid+1;
+    int count = 0;
+    while(low<=mid && right<=high){
+      if(arr[left]<=arr[right])
+        left++;
+      else {
+        count=count+(mid-left+1);
+        right++;
+      }
+    }
+    while (left<=mid)
+      left++;
+
+    while ((right<=high))
+      right++;
+    return count;
+  }
+
+  public int countReversePairs(int[] arr, int low, int high){
+    //application of merge sort
+    int count = 0;
+    if(low>=high) return count;
+    int mid = (low+high)/2;
+    count += countInversions(arr,low,mid);
+    count += countInversions(arr,mid+1,high);
+    count += countPairs( arr,low,mid,high);
+    reverseMerge(arr,low,mid,high);
+    return count;
+  }
+
+  public void reverseMerge(int[]arr, int low, int mid, int high){
+    int left = low;
+    int right = mid+1;
+    while(low<=mid && right<=high){
+      if(arr[left]<=arr[right])
+        left++;
+      else {
+        right++;
+      }
+    }
+    while (left<=mid)
+      left++;
+
+    while ((right<=high))
+      right++;
+  }
+
+   public int countPairs(int[] arr, int low, int mid, int high){
+    int count = 0;
+    int right = mid+1;
+    for(int i =low;i<=mid;i++){
+      while (right <= high && arr[i] > 2 * arr[right]) right++;
+      count = count + (right - (mid+1));
+    }
+    return count;
+   }
+}
 
 
 
