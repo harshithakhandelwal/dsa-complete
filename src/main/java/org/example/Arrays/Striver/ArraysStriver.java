@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package org.example.Arrays.Striver;
 
 import org.example.CompanyInterviews.BigBasket;
 
@@ -778,74 +778,76 @@ public class ArraysStriver {
 
     System.out.println(missing + " " + repeating);
   }
-  public int countInversions(int[] arr,int low, int high){
+
+  public int countInversions(int[] arr, int low, int high) {
     //application of merge sort
     int count = 0;
-    if(low>=high) return count;
-    int mid = (low+high)/2;
-    count += countInversions(arr,low,mid);
-    count += countInversions(arr,mid+1,high);
-    count += merge(arr,low,mid,high);
+    if (low >= high) return count;
+    int mid = (low + high) / 2;
+    count += countInversions(arr, low, mid);
+    count += countInversions(arr, mid + 1, high);
+    count += merge(arr, low, mid, high);
     return count;
   }
-  public int merge(int[] arr, int low, int mid, int high){
+
+  public int merge(int[] arr, int low, int mid, int high) {
     int left = low;
-    int right = mid+1;
+    int right = mid + 1;
     int count = 0;
-    while(low<=mid && right<=high){
-      if(arr[left]<=arr[right])
+    while (low <= mid && right <= high) {
+      if (arr[left] <= arr[right])
         left++;
       else {
-        count=count+(mid-left+1);
+        count = count + (mid - left + 1);
         right++;
       }
     }
-    while (left<=mid)
+    while (left <= mid)
       left++;
 
-    while ((right<=high))
+    while ((right <= high))
       right++;
     return count;
   }
 
-  public int countReversePairs(int[] arr, int low, int high){
+  public int countReversePairs(int[] arr, int low, int high) {
     //application of merge sort
     int count = 0;
-    if(low>=high) return count;
-    int mid = (low+high)/2;
-    count += countInversions(arr,low,mid);
-    count += countInversions(arr,mid+1,high);
-    count += countPairs( arr,low,mid,high);
-    reverseMerge(arr,low,mid,high);
+    if (low >= high) return count;
+    int mid = (low + high) / 2;
+    count += countInversions(arr, low, mid);
+    count += countInversions(arr, mid + 1, high);
+    count += countPairs(arr, low, mid, high);
+    reverseMerge(arr, low, mid, high);
     return count;
   }
 
-  public void reverseMerge(int[]arr, int low, int mid, int high){
+  public void reverseMerge(int[] arr, int low, int mid, int high) {
     int left = low;
-    int right = mid+1;
-    while(low<=mid && right<=high){
-      if(arr[left]<=arr[right])
+    int right = mid + 1;
+    while (low <= mid && right <= high) {
+      if (arr[left] <= arr[right])
         left++;
       else {
         right++;
       }
     }
-    while (left<=mid)
+    while (left <= mid)
       left++;
 
-    while ((right<=high))
+    while ((right <= high))
       right++;
   }
 
-   public int countPairs(int[] arr, int low, int mid, int high){
+  public int countPairs(int[] arr, int low, int mid, int high) {
     int count = 0;
-    int right = mid+1;
-    for(int i =low;i<=mid;i++){
+    int right = mid + 1;
+    for (int i = low; i <= mid; i++) {
       while (right <= high && arr[i] > 2 * arr[right]) right++;
-      count = count + (right - (mid+1));
+      count = count + (right - (mid + 1));
     }
     return count;
-   }
+  }
 }
 
 

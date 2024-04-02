@@ -1,13 +1,15 @@
 package org.example;
 
-import org.example.Arrays.ArraysStriver;
-import org.example.Arrays.StringsStriver;
+import org.example.Arrays.Striver.ArraysStriver;
+import org.example.Arrays.Striver.BinarySearchStriver;
 import org.example.CompanyInterviews.BigBasket;
+import org.example.DSAMisc.Striver.StringsStriver;
 
 public class Main {
   public static void main(String[] args) {
     System.out.println("Let us begin!");
-    arrays();
+    //arrays();
+    binarySearch();
     //bigBasket();
     //strings();
 
@@ -60,10 +62,20 @@ public class Main {
     arraysStriver.mergeSortedArraysUsingThirdArray(new int[]{1, 2, 3, 5}, new int[]{0, 2, 3, 5, 7, 8, 9});
     arraysStriver.mergeSortedArraysWithoutUsingThirdArray(new int[]{1, 2, 3, 5}, new int[]{0, 2, 3, 5, 7, 8, 9});
     arraysStriver.findMissingAndRepeatingNumber(new int[]{2,3,4,6,1,1},6);
-    //arraysStriver.ReversePairs();
     int count = arraysStriver.countInversions(new int[]{5,4,3,2,1},0,4);
     int reversepairs = arraysStriver.countReversePairs(new int[]{4,1,2,3,1}, 0,4);
-    System.out.println(reversepairs);
+    System.out.println(count+reversepairs);
+  }
+
+  public static void binarySearch(){
+    BinarySearchStriver binarySearchStriver = new BinarySearchStriver();
+    binarySearchStriver.binarySearch(new int[]{1,4,5,8,9,10,15,23,45,89,90},45);
+    binarySearchStriver.lowerBound(new int[]{1,4,5,8,9,10,15,19,23,89,90},45);
+    binarySearchStriver.higherBound(new int[]{3, 5, 8, 9, 15, 19},9);
+    binarySearchStriver.searchIndexPosition(new int[]{3, 5, 8, 9, 15, 19},7);
+    binarySearchStriver.findFloorAndCeil(new int[]{3,4,4,7,8,10},8);
+    binarySearchStriver.lastOccuranceOfElement(new int[]{3,4,13,13,13,20,40},13);
+    binarySearchStriver.occurancesOfANumber(new int[]{2, 2 , 3 , 3 , 3 , 4},3);
   }
 
   public static void bigBasket() {
