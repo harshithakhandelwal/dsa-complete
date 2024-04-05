@@ -34,7 +34,7 @@ public class BinarySearchStriver {
     System.out.println(lb);
   }
 
-  public void higherBound(int[] arr, int k) {
+  public void upperBound(int[] arr, int k) {
     int low = 0;
     int high = arr.length - 1;
     int hb = 0;
@@ -90,7 +90,7 @@ public class BinarySearchStriver {
     System.out.println(floor + " " + ceil);
   }
 
-  public void lastOccuranceOfElement(int[] arr, int k) {
+  public void lastOccurrenceOfElement(int[] arr, int k) {
     int low = 0;
     int high = arr.length - 1;
     int last = -1;
@@ -107,7 +107,7 @@ public class BinarySearchStriver {
     System.out.println("element is at index" + (last + 1));
   }
 
-  public void occurancesOfANumber(int[] arr, int k) {
+  public void occurrencesOfANumber(int[] arr, int k) {
     int low = 0;
     int high = arr.length - 1;
     int count = 0;
@@ -137,4 +137,115 @@ public class BinarySearchStriver {
     }
     System.out.println((last - first + 1));
   }
+
+  public void searchInRotatedSortedArray(int[] arr,int k){
+    System.out.println(Arrays.toString(arr));
+    int low = 0;
+    int high = arr.length-1;
+    int sindex = -1;
+    while(low<=high) {
+      int mid = (low+high)/2;
+      if(arr[mid]==k) {
+        sindex = mid+1;
+        break;
+      }
+      if (arr[low]<=arr[mid]){
+        if(arr[low]<=k && k<=arr[mid])
+          high = mid -1;
+        else
+          low = mid+1;
+      }
+      else {
+        if(arr[mid]>=k && k<arr[high])
+          low = mid - 1;
+        else
+          high = mid - 1;
+      }
+    }
+    System.out.println(sindex);
+  }
+  public void searchInRotatedSortedArrayWithDuplicates(int[] arr, int k){
+    System.out.println(Arrays.toString(arr));
+    int low = 0;
+    int high = arr.length-1;
+    boolean flag = false;
+    while(low<=high) {
+      int mid = (low+high)/2;
+      if(arr[mid]==k) {
+        flag = true;
+        break;
+      }
+      if(arr[mid]==arr[low] &&arr[mid]==arr[high]) {
+        low++;
+        high--;
+        continue;
+      }
+      if (arr[low]<=arr[mid]){
+        if(arr[low]<=k && k<=arr[mid])
+          high = mid -1;
+        else
+          low = mid+1;
+      }
+      else {
+        if(arr[mid]>=k && k<arr[high])
+          low = mid - 1;
+        else
+          high = mid - 1;
+      }
+    }
+    System.out.println(flag);
+
+  }
+
+  public void minimumInRotatedSortedArray(int[] arr){
+    int low = 0;
+    int high = arr.length - 1;
+    int min = Integer.MAX_VALUE;
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if(arr[low]<arr[high]) {
+        min = Math.min(arr[low],min);
+        break;
+      }
+      if(arr[low]<=arr[mid] && arr[low]>arr[high]) {
+        low = mid + 1;
+        min = Math.min(min,arr[low]);
+      }
+      else {
+        high = mid - 1;
+        min = Math.min(min,arr[mid]);
+      }
+      }
+    System.out.println(min);
+    }
+
+    public void findNumberOfRotationsOfSortedArray(int[] arr){
+      int low = 0;
+      int high = arr.length - 1;
+      int min = Integer.MAX_VALUE;
+      int minIndex = -1;
+      while (low <= high) {
+        int mid = (low + high) / 2;
+        if(arr[low]<arr[high]) {
+          minIndex = low;
+          break;
+        }
+        if(arr[low]<=arr[mid] && arr[low]>arr[high]) {
+          if(arr[low]<min){
+            minIndex = low;
+            min = arr[low];
+          }
+          low = mid + 1;
+        }
+        else {
+          if(arr[mid]<min)
+          {
+            minIndex = mid;
+            min = arr[mid];
+          }
+          high = mid - 1;
+        }
+      }
+      System.out.println(arr.length-minIndex);
+    }
 }

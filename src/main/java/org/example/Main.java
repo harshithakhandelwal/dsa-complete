@@ -71,11 +71,15 @@ public class Main {
     BinarySearchStriver binarySearchStriver = new BinarySearchStriver();
     binarySearchStriver.binarySearch(new int[]{1,4,5,8,9,10,15,23,45,89,90},45);
     binarySearchStriver.lowerBound(new int[]{1,4,5,8,9,10,15,19,23,89,90},45);
-    binarySearchStriver.higherBound(new int[]{3, 5, 8, 9, 15, 19},9);
+    binarySearchStriver.upperBound(new int[]{3, 5, 8, 9, 15, 19},9);
     binarySearchStriver.searchIndexPosition(new int[]{3, 5, 8, 9, 15, 19},7);
     binarySearchStriver.findFloorAndCeil(new int[]{3,4,4,7,8,10},8);
-    binarySearchStriver.lastOccuranceOfElement(new int[]{3,4,13,13,13,20,40},13);
-    binarySearchStriver.occurancesOfANumber(new int[]{2, 2 , 3 , 3 , 3 , 4},3);
+    binarySearchStriver.lastOccurrenceOfElement(new int[]{3,4,13,13,13,20,40},13);
+    binarySearchStriver.occurrencesOfANumber(new int[]{2, 2 , 3 , 3 , 3 , 4},3);
+    binarySearchStriver.searchInRotatedSortedArray(new int[]{4,5,6,7,0,1,2,3},3);
+    binarySearchStriver.searchInRotatedSortedArrayWithDuplicates(new int[]{7, 8, 1, 2, 3, 3, 3, 4, 5, 6},3);
+    binarySearchStriver.minimumInRotatedSortedArray(new int[]{4,5,6,7,8,9,1,2,3});
+    binarySearchStriver.findNumberOfRotationsOfSortedArray(new int[]{4,5,6,7,8,9,0,1,2,3});
   }
 
   public static void bigBasket() {
