@@ -138,25 +138,24 @@ public class BinarySearchStriver {
     System.out.println((last - first + 1));
   }
 
-  public void searchInRotatedSortedArray(int[] arr,int k){
+  public void searchInRotatedSortedArray(int[] arr, int k) {
     System.out.println(Arrays.toString(arr));
     int low = 0;
-    int high = arr.length-1;
+    int high = arr.length - 1;
     int sindex = -1;
-    while(low<=high) {
-      int mid = (low+high)/2;
-      if(arr[mid]==k) {
-        sindex = mid+1;
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (arr[mid] == k) {
+        sindex = mid + 1;
         break;
       }
-      if (arr[low]<=arr[mid]){
-        if(arr[low]<=k && k<=arr[mid])
-          high = mid -1;
+      if (arr[low] <= arr[mid]) {
+        if (arr[low] <= k && k <= arr[mid])
+          high = mid - 1;
         else
-          low = mid+1;
-      }
-      else {
-        if(arr[mid]>=k && k<arr[high])
+          low = mid + 1;
+      } else {
+        if (arr[mid] >= k && k < arr[high])
           low = mid - 1;
         else
           high = mid - 1;
@@ -164,30 +163,30 @@ public class BinarySearchStriver {
     }
     System.out.println(sindex);
   }
-  public void searchInRotatedSortedArrayWithDuplicates(int[] arr, int k){
+
+  public void searchInRotatedSortedArrayWithDuplicates(int[] arr, int k) {
     System.out.println(Arrays.toString(arr));
     int low = 0;
-    int high = arr.length-1;
+    int high = arr.length - 1;
     boolean flag = false;
-    while(low<=high) {
-      int mid = (low+high)/2;
-      if(arr[mid]==k) {
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (arr[mid] == k) {
         flag = true;
         break;
       }
-      if(arr[mid]==arr[low] &&arr[mid]==arr[high]) {
+      if (arr[mid] == arr[low] && arr[mid] == arr[high]) {
         low++;
         high--;
         continue;
       }
-      if (arr[low]<=arr[mid]){
-        if(arr[low]<=k && k<=arr[mid])
-          high = mid -1;
+      if (arr[low] <= arr[mid]) {
+        if (arr[low] <= k && k <= arr[mid])
+          high = mid - 1;
         else
-          low = mid+1;
-      }
-      else {
-        if(arr[mid]>=k && k<arr[high])
+          low = mid + 1;
+      } else {
+        if (arr[mid] >= k && k < arr[high])
           low = mid - 1;
         else
           high = mid - 1;
@@ -197,55 +196,100 @@ public class BinarySearchStriver {
 
   }
 
-  public void minimumInRotatedSortedArray(int[] arr){
+  public void minimumInRotatedSortedArray(int[] arr) {
     int low = 0;
     int high = arr.length - 1;
     int min = Integer.MAX_VALUE;
     while (low <= high) {
       int mid = (low + high) / 2;
-      if(arr[low]<arr[high]) {
-        min = Math.min(arr[low],min);
+      if (arr[low] < arr[high]) {
+        min = Math.min(arr[low], min);
         break;
       }
-      if(arr[low]<=arr[mid] && arr[low]>arr[high]) {
+      if (arr[low] <= arr[mid] && arr[low] > arr[high]) {
         low = mid + 1;
-        min = Math.min(min,arr[low]);
-      }
-      else {
+        min = Math.min(min, arr[low]);
+      } else {
         high = mid - 1;
-        min = Math.min(min,arr[mid]);
+        min = Math.min(min, arr[mid]);
       }
-      }
+    }
     System.out.println(min);
-    }
+  }
 
-    public void findNumberOfRotationsOfSortedArray(int[] arr){
-      int low = 0;
-      int high = arr.length - 1;
-      int min = Integer.MAX_VALUE;
-      int minIndex = -1;
-      while (low <= high) {
-        int mid = (low + high) / 2;
-        if(arr[low]<arr[high]) {
-          minIndex = low;
-          break;
-        }
-        if(arr[low]<=arr[mid] && arr[low]>arr[high]) {
-          if(arr[low]<min){
-            minIndex = low;
-            min = arr[low];
-          }
-          low = mid + 1;
-        }
-        else {
-          if(arr[mid]<min)
-          {
-            minIndex = mid;
-            min = arr[mid];
-          }
-          high = mid - 1;
-        }
+  public void findNumberOfRotationsOfSortedArray(int[] arr) {
+    int low = 0;
+    int high = arr.length - 1;
+    int min = Integer.MAX_VALUE;
+    int minIndex = -1;
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (arr[low] < arr[high]) {
+        minIndex = low;
+        break;
       }
-      System.out.println(arr.length-minIndex);
+      if (arr[low] <= arr[mid] && arr[low] > arr[high]) {
+        if (arr[low] < min) {
+          minIndex = low;
+          min = arr[low];
+        }
+        low = mid + 1;
+      } else {
+        if (arr[mid] < min) {
+          minIndex = mid;
+          min = arr[mid];
+        }
+        high = mid - 1;
+      }
     }
+    System.out.println(arr.length - minIndex);
+  }
+
+  public void searchSingleElementInSortedArray(int[] arr) {
+    //better would be to xor whole array with t(n) complexity. best is using binary search with log n time complexity
+    System.out.println(Arrays.toString(arr));
+    int low = 1;
+    int high = arr.length - 2;
+    int ele = 0;
+    if (arr.length < 2)
+      System.out.println(arr[0]);
+    if (arr[0] != arr[1])
+      System.out.println(arr[0]);
+    if (arr[arr.length - 1] != arr[arr.length - 2])
+      System.out.println(arr[arr.length - 1]);
+
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (arr[mid] != arr[mid + 1] && arr[mid] != arr[mid - 1]){
+        ele = arr[mid];
+        break;
+        }
+      if (mid % 2 == 0 && arr[mid] == arr[mid + 1] || mid % 2 == 1 && arr[mid] == arr[mid - 1])
+        low = mid + 1;
+      else
+        high = mid - 1;
+    }
+    System.out.println(ele);
+  }
+
+  public void findPeakElement(int[] arr){
+    System.out.println("Find peak element"+Arrays.toString(arr));
+    int low = 1;
+    int high = arr.length -2;
+    if(arr.length==1)
+      System.out.println(arr[0]);
+    if(arr[0]>arr[1])
+      System.out.println(arr[0]);
+    if(arr[arr.length-1]>arr[arr.length-2])
+      System.out.println(arr[arr.length-1]);
+    while (low<=high){
+      int mid = (low+high)/2;
+      if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
+        System.out.println(arr[mid]);
+      if(arr[mid]>arr[mid-1])
+        low = mid+1;
+      else
+        high = mid-1;
+    }
+  }
 }

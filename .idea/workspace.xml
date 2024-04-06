@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1881e995-fa1f-47d3-beb3-cbe48264741c" name="Changes" comment="array medium 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/GeeksForGeeks/ArraysGFG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/GeeksForGeeks/Arrays.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/ArrayIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/ArrayIntuitions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,13 +101,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="40" />
+          <line>286</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="42" />
+          <line>289</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <line>291</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/GeeksForGeeks/ArraysGFG.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/GeeksForGeeks/ArraysGFG.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -164,8 +164,10 @@ https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
 6. Merge two sorted arrays
 7. Merge overlapping arrays
 8. Three Sum Problem
-   Optimal - sort the arrays, then take three pointers, i j and k, skip duplicate elements in i, then set j as i+1 and k as n-1.
-   add them, if its less than zero then increment j, if its greater than 0 then decrement k. if its equal to zero add the pair in array and move to next elements.
+   Optimal - sort the arrays, then take three pointers, i j and k, skip duplicate elements in i, then set j as i+1 and k
+   as n-1.
+   add them, if its less than zero then increment j, if its greater than 0 then decrement k. if its equal to zero add
+   the pair in array and move to next elements.
 9. Four Sum problem
 10. Count inversions
 11. Count subaraays with xor K

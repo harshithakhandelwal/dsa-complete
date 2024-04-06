@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Arrays.GeeksForGeeks.ArraysGFG;
 import org.example.Arrays.Striver.ArraysStriver;
 import org.example.Arrays.Striver.BinarySearchStriver;
 import org.example.CompanyInterviews.BigBasket;
@@ -9,9 +10,10 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("Let us begin!");
     //arrays();
-    binarySearch();
+    //binarySearch();
     //bigBasket();
     //strings();
+    arraysGFG();
 
   }
 
@@ -61,25 +63,27 @@ public class Main {
     arraysStriver.mergeOverlappingIntervals(new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}});
     arraysStriver.mergeSortedArraysUsingThirdArray(new int[]{1, 2, 3, 5}, new int[]{0, 2, 3, 5, 7, 8, 9});
     arraysStriver.mergeSortedArraysWithoutUsingThirdArray(new int[]{1, 2, 3, 5}, new int[]{0, 2, 3, 5, 7, 8, 9});
-    arraysStriver.findMissingAndRepeatingNumber(new int[]{2,3,4,6,1,1},6);
-    int count = arraysStriver.countInversions(new int[]{5,4,3,2,1},0,4);
-    int reversepairs = arraysStriver.countReversePairs(new int[]{4,1,2,3,1}, 0,4);
-    System.out.println(count+reversepairs);
+    arraysStriver.findMissingAndRepeatingNumber(new int[]{2, 3, 4, 6, 1, 1}, 6);
+    int count = arraysStriver.countInversions(new int[]{5, 4, 3, 2, 1}, 0, 4);
+    int reversepairs = arraysStriver.countReversePairs(new int[]{4, 1, 2, 3, 1}, 0, 4);
+    System.out.println(count + reversepairs);
   }
 
-  public static void binarySearch(){
+  public static void binarySearch() {
     BinarySearchStriver binarySearchStriver = new BinarySearchStriver();
-    binarySearchStriver.binarySearch(new int[]{1,4,5,8,9,10,15,23,45,89,90},45);
-    binarySearchStriver.lowerBound(new int[]{1,4,5,8,9,10,15,19,23,89,90},45);
-    binarySearchStriver.upperBound(new int[]{3, 5, 8, 9, 15, 19},9);
-    binarySearchStriver.searchIndexPosition(new int[]{3, 5, 8, 9, 15, 19},7);
-    binarySearchStriver.findFloorAndCeil(new int[]{3,4,4,7,8,10},8);
-    binarySearchStriver.lastOccurrenceOfElement(new int[]{3,4,13,13,13,20,40},13);
-    binarySearchStriver.occurrencesOfANumber(new int[]{2, 2 , 3 , 3 , 3 , 4},3);
-    binarySearchStriver.searchInRotatedSortedArray(new int[]{4,5,6,7,0,1,2,3},3);
-    binarySearchStriver.searchInRotatedSortedArrayWithDuplicates(new int[]{7, 8, 1, 2, 3, 3, 3, 4, 5, 6},3);
-    binarySearchStriver.minimumInRotatedSortedArray(new int[]{4,5,6,7,8,9,1,2,3});
-    binarySearchStriver.findNumberOfRotationsOfSortedArray(new int[]{4,5,6,7,8,9,0,1,2,3});
+    binarySearchStriver.binarySearch(new int[]{1, 4, 5, 8, 9, 10, 15, 23, 45, 89, 90}, 45);
+    binarySearchStriver.lowerBound(new int[]{1, 4, 5, 8, 9, 10, 15, 19, 23, 89, 90}, 45);
+    binarySearchStriver.upperBound(new int[]{3, 5, 8, 9, 15, 19}, 9);
+    binarySearchStriver.searchIndexPosition(new int[]{3, 5, 8, 9, 15, 19}, 7);
+    binarySearchStriver.findFloorAndCeil(new int[]{3, 4, 4, 7, 8, 10}, 8);
+    binarySearchStriver.lastOccurrenceOfElement(new int[]{3, 4, 13, 13, 13, 20, 40}, 13);
+    binarySearchStriver.occurrencesOfANumber(new int[]{2, 2, 3, 3, 3, 4}, 3);
+    binarySearchStriver.searchInRotatedSortedArray(new int[]{4, 5, 6, 7, 0, 1, 2, 3}, 3);
+    binarySearchStriver.searchInRotatedSortedArrayWithDuplicates(new int[]{7, 8, 1, 2, 3, 3, 3, 4, 5, 6}, 3);
+    binarySearchStriver.minimumInRotatedSortedArray(new int[]{4, 5, 6, 7, 8, 9, 1, 2, 3});
+    binarySearchStriver.findNumberOfRotationsOfSortedArray(new int[]{4, 5, 6, 7, 8, 9, 0, 1, 2, 3});
+    binarySearchStriver.searchSingleElementInSortedArray(new int[]{1, 1, 2, 2, 3, 3, 5, 5, 6, 6, 7, 8, 8, 9, 9});
+    binarySearchStriver.findPeakElement(new int[]{1,2,1,3,5,6,4});
   }
 
   public static void bigBasket() {
@@ -100,5 +104,18 @@ public class Main {
     stringsStriver.reverseWordsInString("the sky is blue");
     stringsStriver.largestOddNumberInString("35427");
     stringsStriver.longestCommonPrefix(new String[]{"flower", "flow", "flight"});
+  }
+
+  public static void arraysGFG(){
+    ArraysGFG arrays = new ArraysGFG();
+    arrays.findLargestThreeElements(new int[]{4,5,7,8,9,10,15,2,6});
+    arrays.rearrangeSuchThatEvenPositionIsGreaterThanOdd(new int[]{1,46,48,1});
+    arrays.rearrangeASortedArrayInMaximumMinimum(new int[]{1,2,3,4,5,6,7});
+    arrays.segregateArrayEvenAndOddElements(new int[]{7, 2, 9, 4, 6, 1, 3, 8, 5});
+    arrays.cyclicSort(new int[]{10, 7, 9, 2, 8, 3, 5, 4, 6, 1});
+    arrays.countNumberOfPossibleTriangles(new int[]{10, 21, 22, 100, 101, 200, 300});
+    arrays.reArrangeElementWithIndex(new int[]{-1, -1, 6, 1, 9, 3, 2, -1, 4, -1});
+    arrays.reArrangeElementWithIndexInAnotherArray(new int[]{ 23, 12, 20, 10, 23 },new int[]{ 4, 0, 1, 2, 3 });
+    arrays.findTheSmallestMissingNumber(new int[]{0,1,2,3},10);
   }
 }
