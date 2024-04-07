@@ -173,4 +173,21 @@ https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
 11. Count subaraays with xor K
 
 
+*GFG*
+
+
+1. findLargestThreeElements(new int[]{4, 5, 7, 8, 9, 10, 15, 2, 6});
+2. rearrangeSuchThatEvenPositionIsGreaterThanOdd(new int[]{1, 46, 48, 1});
+3. rearrangeASortedArrayInMaximumMinimum(new int[]{1, 2, 3, 4, 5, 6, 7});
+4. segregateArrayEvenAndOddElements(new int[]{7, 2, 9, 4, 6, 1, 3, 8, 5});
+5. cyclicSort(new int[]{10, 7, 9, 2, 8, 3, 5, 4, 6, 1});
+6. countNumberOfPossibleTriangles(new int[]{10, 21, 22, 100, 101, 200, 300});
+7. reArrangeElementWithIndex(new int[]{-1, -1, 6, 1, 9, 3, 2, -1, 4, -1});
+8. reArrangeElementWithIndexInAnotherArray(new int[]{23, 12, 20, 10, 23}, new int[]{4, 0, 1, 2, 3});
+9. findTheSmallestMissingNumber(new int[]{0, 1, 2, 3}, 10);
+10. KthSumOfAContiguousArray(new int[]{20, -5, -1}, 6);
+11. smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 4, 45, 6, 0, 19}, 51);
+12. smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 11, 100, 1, 0, 200, 3, 2, 1, 250}, 280);
+13. updateArrayInRange(new int[]{10, 30, 50, 70, 90}, new int[]{1, 1, 50});
+
 
