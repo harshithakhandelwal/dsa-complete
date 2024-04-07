@@ -260,10 +260,10 @@ public class BinarySearchStriver {
 
     while (low <= high) {
       int mid = (low + high) / 2;
-      if (arr[mid] != arr[mid + 1] && arr[mid] != arr[mid - 1]){
+      if (arr[mid] != arr[mid + 1] && arr[mid] != arr[mid - 1]) {
         ele = arr[mid];
         break;
-        }
+      }
       if (mid % 2 == 0 && arr[mid] == arr[mid + 1] || mid % 2 == 1 && arr[mid] == arr[mid - 1])
         low = mid + 1;
       else
@@ -272,24 +272,24 @@ public class BinarySearchStriver {
     System.out.println(ele);
   }
 
-  public void findPeakElement(int[] arr){
-    System.out.println("Find peak element"+Arrays.toString(arr));
+  public void findPeakElement(int[] arr) {
+    System.out.println("Find peak element" + Arrays.toString(arr));
     int low = 1;
-    int high = arr.length -2;
-    if(arr.length==1)
+    int high = arr.length - 2;
+    if (arr.length == 1)
       System.out.println(arr[0]);
-    if(arr[0]>arr[1])
+    if (arr[0] > arr[1])
       System.out.println(arr[0]);
-    if(arr[arr.length-1]>arr[arr.length-2])
-      System.out.println(arr[arr.length-1]);
-    while (low<=high){
-      int mid = (low+high)/2;
-      if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
+    if (arr[arr.length - 1] > arr[arr.length - 2])
+      System.out.println(arr[arr.length - 1]);
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (arr[mid] > arr[mid - 1] && arr[mid] > arr[mid + 1])
         System.out.println(arr[mid]);
-      if(arr[mid]>arr[mid-1])
-        low = mid+1;
+      if (arr[mid] > arr[mid - 1])
+        low = mid + 1;
       else
-        high = mid-1;
+        high = mid - 1;
     }
   }
 }

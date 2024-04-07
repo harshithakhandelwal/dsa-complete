@@ -83,7 +83,7 @@ public class Main {
     binarySearchStriver.minimumInRotatedSortedArray(new int[]{4, 5, 6, 7, 8, 9, 1, 2, 3});
     binarySearchStriver.findNumberOfRotationsOfSortedArray(new int[]{4, 5, 6, 7, 8, 9, 0, 1, 2, 3});
     binarySearchStriver.searchSingleElementInSortedArray(new int[]{1, 1, 2, 2, 3, 3, 5, 5, 6, 6, 7, 8, 8, 9, 9});
-    binarySearchStriver.findPeakElement(new int[]{1,2,1,3,5,6,4});
+    binarySearchStriver.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4});
   }
 
   public static void bigBasket() {
@@ -106,20 +106,20 @@ public class Main {
     stringsStriver.longestCommonPrefix(new String[]{"flower", "flow", "flight"});
   }
 
-  public static void arraysGFG(){
+  public static void arraysGFG() {
     ArraysGFG arrays = new ArraysGFG();
-    arrays.findLargestThreeElements(new int[]{4,5,7,8,9,10,15,2,6});
-    arrays.rearrangeSuchThatEvenPositionIsGreaterThanOdd(new int[]{1,46,48,1});
-    arrays.rearrangeASortedArrayInMaximumMinimum(new int[]{1,2,3,4,5,6,7});
+    arrays.findLargestThreeElements(new int[]{4, 5, 7, 8, 9, 10, 15, 2, 6});
+    arrays.rearrangeSuchThatEvenPositionIsGreaterThanOdd(new int[]{1, 46, 48, 1});
+    arrays.rearrangeASortedArrayInMaximumMinimum(new int[]{1, 2, 3, 4, 5, 6, 7});
     arrays.segregateArrayEvenAndOddElements(new int[]{7, 2, 9, 4, 6, 1, 3, 8, 5});
     arrays.cyclicSort(new int[]{10, 7, 9, 2, 8, 3, 5, 4, 6, 1});
     arrays.countNumberOfPossibleTriangles(new int[]{10, 21, 22, 100, 101, 200, 300});
     arrays.reArrangeElementWithIndex(new int[]{-1, -1, 6, 1, 9, 3, 2, -1, 4, -1});
-    arrays.reArrangeElementWithIndexInAnotherArray(new int[]{ 23, 12, 20, 10, 23 },new int[]{ 4, 0, 1, 2, 3 });
-    arrays.findTheSmallestMissingNumber(new int[]{0,1,2,3},10);
-    arrays.KthSumOfAContiguousArray(new int[]{20,-5,-1},6);
-    arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 4, 45, 6, 0, 19},51);
-    arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 11, 100, 1, 0, 200, 3, 2, 1, 250},280);
-    arrays.updateArrayInRange(new int[]{10,30,50,70,90},new int[]{1,1,50});
+    arrays.reArrangeElementWithIndexInAnotherArray(new int[]{23, 12, 20, 10, 23}, new int[]{4, 0, 1, 2, 3});
+    arrays.findTheSmallestMissingNumber(new int[]{0, 1, 2, 3}, 10);
+    arrays.KthSumOfAContiguousArray(new int[]{20, -5, -1}, 6);
+    arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 4, 45, 6, 0, 19}, 51);
+    arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 11, 100, 1, 0, 200, 3, 2, 1, 250}, 280);
+    arrays.updateArrayInRange(new int[]{10, 30, 50, 70, 90}, new int[]{1, 1, 50});
   }
 }

@@ -1,7 +1,5 @@
 package org.example.Arrays.GeeksForGeeks;
 
-import org.example.Main;
-
 import java.util.Arrays;
 
 public class ArraysGFG {
@@ -132,45 +130,44 @@ public class ArraysGFG {
     System.out.println(Arrays.toString(arr));
   }
 
-    public void reArrangeElementWithIndexInAnotherArray(int[] arr, int[] index){
-      int n = arr.length;
-      System.out.println(Arrays.toString(arr));
-      System.out.println(Arrays.toString(index));
-      for (int i = 0; i < n; i++) {
-        int actualIndex = index[i];
-          swap(arr, i, actualIndex);
-          swap(index,i,actualIndex);
-      }
-      System.out.println(Arrays.toString(arr));
-      System.out.println(Arrays.toString(index));
+  public void reArrangeElementWithIndexInAnotherArray(int[] arr, int[] index) {
+    int n = arr.length;
+    System.out.println(Arrays.toString(arr));
+    System.out.println(Arrays.toString(index));
+    for (int i = 0; i < n; i++) {
+      int actualIndex = index[i];
+      swap(arr, i, actualIndex);
+      swap(index, i, actualIndex);
     }
+    System.out.println(Arrays.toString(arr));
+    System.out.println(Arrays.toString(index));
+  }
 
   public void findTheSmallestMissingNumber(int[] arr, int m) {
     System.out.println(Arrays.toString(arr));
     int n = arr.length;
     int low = 0;
-    int high = n-1;
+    int high = n - 1;
     int smallest = -1;
-    if(n==m)
+    if (n == m)
       return;
-    if(arr[high]==high)
+    if (arr[high] == high)
       smallest = n;
-    if(arr[low]!=low)
+    if (arr[low] != low)
       smallest = low;
-    while (low<=high){
-      int mid = (low+high)/2;
-      if(arr[mid]==mid) {
-        low=mid+1;
-      }
-      else {
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (arr[mid] == mid) {
+        low = mid + 1;
+      } else {
         high = mid - 1;
-        smallest=mid;
+        smallest = mid;
       }
     }
     System.out.println(smallest);
   }
 
-  public void KthSumOfAContiguousArray(int[] arr,int k) {
+  public void KthSumOfAContiguousArray(int[] arr, int k) {
     System.out.println(Arrays.toString(arr));
     int count = 0;
     for (int i = 0; i < arr.length; i++) {
@@ -185,31 +182,33 @@ public class ArraysGFG {
       }
     }
   }
-  public void smallestSubArrayWithSumGreaterThanKValue(int[] arr, int k){
+
+  public void smallestSubArrayWithSumGreaterThanKValue(int[] arr, int k) {
     /*
-    * arr[] = {1, 4, 45, 6, 0, 19}
-    * x  =  51
-    * Output: 3
-    * Minimum length subarray is {4, 45, 6}
-    */
+     * arr[] = {1, 4, 45, 6, 0, 19}
+     * x  =  51
+     * Output: 3
+     * Minimum length subarray is {4, 45, 6}
+     */
     int n = arr.length;
     int psum = 0;
     int minlen = Integer.MAX_VALUE;
     int start = 0;
-    for(int i = 0; i<n;i++){
-      psum = psum+arr[i];
-      while(psum>k) {
-        minlen = Math.min(minlen,i-start+1);
-        psum = psum-arr[start];
+    for (int i = 0; i < n; i++) {
+      psum = psum + arr[i];
+      while (psum > k) {
+        minlen = Math.min(minlen, i - start + 1);
+        psum = psum - arr[start];
         start++;
       }
     }
     System.out.println(minlen);
   }
-  public void updateArrayInRange(int[] arr, int[] update){
+
+  public void updateArrayInRange(int[] arr, int[] update) {
     System.out.println(Arrays.toString(arr));
-    for(int i = update[0]; i<=update[1];i++){
-      arr[i] = arr[i]+update[2];
+    for (int i = update[0]; i <= update[1]; i++) {
+      arr[i] = arr[i] + update[2];
     }
     System.out.println(Arrays.toString(arr));
   }
