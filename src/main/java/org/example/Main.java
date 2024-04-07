@@ -117,5 +117,9 @@ public class Main {
     arrays.reArrangeElementWithIndex(new int[]{-1, -1, 6, 1, 9, 3, 2, -1, 4, -1});
     arrays.reArrangeElementWithIndexInAnotherArray(new int[]{ 23, 12, 20, 10, 23 },new int[]{ 4, 0, 1, 2, 3 });
     arrays.findTheSmallestMissingNumber(new int[]{0,1,2,3},10);
+    arrays.KthSumOfAContiguousArray(new int[]{20,-5,-1},6);
+    arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 4, 45, 6, 0, 19},51);
+    arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 11, 100, 1, 0, 200, 3, 2, 1, 250},280);
+    arrays.updateArrayInRange(new int[]{10,30,50,70,90},new int[]{1,1,50});
   }
 }
