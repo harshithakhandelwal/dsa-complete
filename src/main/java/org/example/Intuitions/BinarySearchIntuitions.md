@@ -1,5 +1,3 @@
-
-
 # **Binary search**
 
 ## **easy**

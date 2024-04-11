@@ -172,9 +172,7 @@ https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
 10. Count inversions
 11. Count subaraays with xor K
 
-
 *GFG*
-
 
 1. findLargestThreeElements(new int[]{4, 5, 7, 8, 9, 10, 15, 2, 6});
 2. rearrangeSuchThatEvenPositionIsGreaterThanOdd(new int[]{1, 46, 48, 1});

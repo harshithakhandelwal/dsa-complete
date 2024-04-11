@@ -292,4 +292,129 @@ public class BinarySearchStriver {
         high = mid - 1;
     }
   }
-}
+
+  public void findSquareRootOfANumberUsingBinarySearch(int n) {
+    int low = 1;
+    int high = n;
+    int sqrt = 0;
+    while (low<=high){
+     int mid = (low+high)/2;
+     int square = mid*mid;
+     if(square<=n) {
+       sqrt = mid;
+       low=mid+1;
+     }
+     else
+       high=mid-1;
+    }
+    System.out.println(sqrt);
+  }
+
+  public void findNthRootOfANumber(long n,long m){
+    long low = 1;
+    long high = m;
+    long root = -1;
+    while (low<=high){
+      long mid = (low+high)/2;
+      long ans = (int) Math.pow(mid,n);
+      if(ans==m) {
+        root = mid;
+        break;
+      }
+      else if(ans<m) {
+        low=mid+1;
+      }
+      else
+        high=mid-1;
+    }
+    System.out.println(root);
+  }
+
+//  public void kokoEatingBananas(int[] piles, int h) {
+//    int min = piles[0];
+//    int max = piles[piles.length-1];
+//    for(int i=0;i<piles.length;i++){
+//      if(piles[i]<min)
+//        min = piles[i];
+//      else if(piles[i]>max)
+//        max = piles[i];
+//    }
+//    double k = min;
+//    while(k<=max){
+//      double totaltime = 0;
+//
+//      for (double j : piles) {
+//        totaltime +=  Math.ceil(j/k);
+//      }
+//      if(totaltime<=h) {
+//        break;
+//      }
+//      else {
+//        k++;
+//      }
+//      }
+//    System.out.println(k);
+//  }
+
+  public void kokoEatingBananas2(int[] piles, int h) {
+    int min = piles[0];
+    int max = piles[piles.length-1];
+    int k = Integer.MAX_VALUE;
+    for(int i=0;i<piles.length;i++){
+      if(piles[i]<min)
+        min = piles[i];
+      else if(piles[i]>max)
+        max = piles[i];
+    }
+    while(min<=max){
+      int mid = (min+max)/2;
+      double totaltime = 0;
+      for (double j : piles) {
+        totaltime +=  Math.ceil(j/mid);
+      }
+      if(totaltime<=h) {
+        k = Math.min(k,mid);
+        max = mid-1;
+      }
+      else if(totaltime>h)
+        min = mid+1;
+      }
+    System.out.println(k);
+    }
+
+    public void minimumDaysToMakeBouquets(int n,int[] day, int m, int k){
+      int min = day[0];
+      int max = day[n-1];
+      if(n<(m*k)) {
+        System.out.println(-1);
+      }
+      int mindays = Integer.MAX_VALUE;
+      for(int i=0;i<n;i++){
+        if(day[i]<min)
+          min = day[i];
+        else if(day[i]>max)
+          max = day[i];
+      }
+      while(min<max) {
+        int count = 0;
+        int bouquet = 0;
+        int mid = (min+max)/2;
+        for (int i = 0; i < n; i++) {
+          if (day[i] <= mid && count < k)
+            count++;
+          if(count==k && bouquet<m) {
+            count = 0;
+            bouquet++;
+          }
+        }
+        if(bouquet == m) {
+          max = mid - 1;
+          mindays = mid;
+        }
+        else
+          min = mid+1;
+      }
+      System.out.println(mindays);
+    }
+  }
+

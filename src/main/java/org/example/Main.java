@@ -10,12 +10,12 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("Let us begin!");
     //arrays();
-    //binarySearch();
+    binarySearch();
     //bigBasket();
     //strings();
-    arraysGFG();
-
+    //arraysGFG();
   }
+
 
   public static void arrays() {
     ArraysStriver arraysStriver = new ArraysStriver();
@@ -71,7 +71,7 @@ public class Main {
 
   public static void binarySearch() {
     BinarySearchStriver binarySearchStriver = new BinarySearchStriver();
-    binarySearchStriver.binarySearch(new int[]{1, 4, 5, 8, 9, 10, 15, 23, 45, 89, 90}, 45);
+   /* binarySearchStriver.binarySearch(new int[]{1, 4, 5, 8, 9, 10, 15, 23, 45, 89, 90}, 45);
     binarySearchStriver.lowerBound(new int[]{1, 4, 5, 8, 9, 10, 15, 19, 23, 89, 90}, 45);
     binarySearchStriver.upperBound(new int[]{3, 5, 8, 9, 15, 19}, 9);
     binarySearchStriver.searchIndexPosition(new int[]{3, 5, 8, 9, 15, 19}, 7);
@@ -83,7 +83,14 @@ public class Main {
     binarySearchStriver.minimumInRotatedSortedArray(new int[]{4, 5, 6, 7, 8, 9, 1, 2, 3});
     binarySearchStriver.findNumberOfRotationsOfSortedArray(new int[]{4, 5, 6, 7, 8, 9, 0, 1, 2, 3});
     binarySearchStriver.searchSingleElementInSortedArray(new int[]{1, 1, 2, 2, 3, 3, 5, 5, 6, 6, 7, 8, 8, 9, 9});
-    binarySearchStriver.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4});
+    binarySearchStriver.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4});*/
+    //binarySearchStriver.findSquareRootOfANumberUsingBinarySearch(28);
+   // binarySearchStriver.findNthRootOfANumber(4,256);
+   // binarySearchStriver.kokoEatingBananas2(new int[]{30,11,23,4,20},5);
+    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,3);
+    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,6);
+
+
   }
 
   public static void bigBasket() {
