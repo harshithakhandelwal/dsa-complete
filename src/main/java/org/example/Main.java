@@ -83,14 +83,22 @@ public class Main {
     binarySearchStriver.minimumInRotatedSortedArray(new int[]{4, 5, 6, 7, 8, 9, 1, 2, 3});
     binarySearchStriver.findNumberOfRotationsOfSortedArray(new int[]{4, 5, 6, 7, 8, 9, 0, 1, 2, 3});
     binarySearchStriver.searchSingleElementInSortedArray(new int[]{1, 1, 2, 2, 3, 3, 5, 5, 6, 6, 7, 8, 8, 9, 9});
-    binarySearchStriver.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4});*/
-    //binarySearchStriver.findSquareRootOfANumberUsingBinarySearch(28);
-   // binarySearchStriver.findNthRootOfANumber(4,256);
-   // binarySearchStriver.kokoEatingBananas2(new int[]{30,11,23,4,20},5);
+    binarySearchStriver.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4});
+
+    binarySearchStriver.findSquareRootOfANumberUsingBinarySearch(28);
+    binarySearchStriver.findNthRootOfANumber(4,256);
+    binarySearchStriver.kokoEatingBananas2(new int[]{30,11,23,4,20},5);
     binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,3);
-    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,6);
+    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,6); */
+    //binarySearchStriver.smallestDivisorGivenThreshold(new int[]{8,4,2,3},10);
+    //binarySearchStriver.capacityToShipWithinDDays(new int[]{5,4,5,2,3,4,5,6},5);
+    //binarySearchStriver.aggressiveCows(new int[]{4,2,1,3,6}, 5, 2);
+    //binarySearchStriver.allocationOfBooks(new int[]{12,34,67,90},2);
 
-
+    //binarySearchStriver.rowWithMax1In2DArray(new int[][]{{1,1,1},{0,0,1},{0,0,0}}, 3, 3);
+    //binarySearchStriver.searchInA2DMatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, 3, 4, 8);
+    //binarySearchStriver.findPeakElementIn2DArray(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+    binarySearchStriver.findMedianIn2DArray(new int[][]{{1, 3, 8}, {2, 3, 4}, {1, 2, 5}});
   }
 
   public static void bigBasket() {
