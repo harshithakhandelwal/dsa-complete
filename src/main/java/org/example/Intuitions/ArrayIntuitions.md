@@ -159,17 +159,17 @@ https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
    Optimal - if presum is 0 we update max with cuurent index+1, if presum exists in the hashmap, we update the length of
    maximum with i-presumidex.  
    <br>
-4. Maximum product subarray
-5. Reverse pairs
-6. Merge two sorted arrays
-7. Merge overlapping arrays
-8. Three Sum Problem
+4. Maximum product subarray -
+5. Reverse pairs - merge sort
+6. Merge two sorted arrays - merge
+7. Merge overlapping arrays - merge
+8. Three Sum Problem - extra pointer
    Optimal - sort the arrays, then take three pointers, i j and k, skip duplicate elements in i, then set j as i+1 and k
    as n-1.
    add them, if its less than zero then increment j, if its greater than 0 then decrement k. if its equal to zero add
    the pair in array and move to next elements.
-9. Four Sum problem
-10. Count inversions
+9. Four Sum problem - extra pointer and loop
+10. Count inversions - merge sort
 11. Count subaraays with xor K
 
 *GFG*

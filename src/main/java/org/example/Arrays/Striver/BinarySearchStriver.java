@@ -469,12 +469,11 @@ public class BinarySearchStriver {
     int min = 1;
     int minmaxdist = Integer.MIN_VALUE;
     while (min <= max) {
-      int mid = (max+min)/2;
+      int mid = (max + min) / 2;
       if (canWePlace(stalls, mid, cows)) {
-        minmaxdist = Math.max(max,minmaxdist);
-        min=mid+1;
-      }
-      else max = mid-1;
+        minmaxdist = Math.max(max, minmaxdist);
+        min = mid + 1;
+      } else max = mid - 1;
     }
     System.out.println(minmaxdist);
   }
@@ -492,25 +491,26 @@ public class BinarySearchStriver {
     return false;
   }
 
-  public void allocationOfBooks(int[] pages, int students){
+  public void allocationOfBooks(int[] pages, int students) {
     int noOfBooks = pages.length;
     int sum = 0;
     int min = Integer.MIN_VALUE;
-    if(students> noOfBooks)
+    if (students > noOfBooks)
       System.out.println(-1);
     for (int page : pages) {
-      if(page>min)
+      if (page > min)
         min = page;
       sum += page;
     }
-    for(int maxpage = 112; maxpage<sum;maxpage++){
-      if(countStudents(pages,maxpage)==students) {
+    for (int maxpage = 112; maxpage < sum; maxpage++) {
+      if (countStudents(pages, maxpage) == students) {
         System.out.println(maxpage);
         break;
       }
     }
   }
-  public int countStudents(int[] pages, int maxpages){
+
+  public int countStudents(int[] pages, int maxpages) {
     int count = 1;
     int pagestudent = 0;
     for (int page : pages) {
@@ -524,37 +524,83 @@ public class BinarySearchStriver {
     return count;
   }
 
-  public void rowWithMax1In2DArray(int[][] matrix,int n, int m){
+  public void splitArrayLargestSum(int[] arr, int k) {
+    int lowSum = arr[0];
+    int highSum = 0;
+    for (int j : arr) {
+      lowSum = Math.max(lowSum, j);
+      highSum += j;
+    }
+    while (lowSum <= highSum) {
+      int mid = (lowSum + highSum) / 2;
+      if (countSum(arr, mid) <= k) {
+        highSum = mid - 1;
+      } else lowSum = mid + 1;
+    }
+    System.out.println(lowSum);
+  }
+
+  private int countSum(int[] arr, int acsum) {
+    int count = 1;
+    int subarraysum = 0;
+    for (int i = 0; i < arr.length; i++) {
+      if ((arr[i] + subarraysum) <= acsum)
+        subarraysum += arr[i];
+      else {
+        count++;
+        subarraysum = arr[i];
+      }
+    }
+    return count;
+  }
+
+  public void rowWithMax1In2DArray(int[][] matrix, int n, int m) {
     int countmax = 0;
     int index = -1;
-    for(int i= 0; i<n;i++){
+    for (int i = 0; i < n; i++) {
       int curcount = 0;
-      for(int j = 0; j<m;j++){
-          curcount = curcount+matrix[i][j];
+      for (int j = 0; j < m; j++) {
+        curcount = curcount + matrix[i][j];
       }
-      if(curcount>countmax){
-        countmax=curcount;
+      if (curcount > countmax) {
+        countmax = curcount;
         index = i;
       }
     }
     System.out.println(index);
   }
 
-  public void searchInA2DMatrix(int[][] matrix, int n, int m,int target) {
+  public void searchInA2DMatrix(int[][] matrix, int n, int m, int target) {
     int low = 0;
-    int high = (n*m)-1;
-    while(low<=high){
-      int mid = (low+high)/2;
-      int i = mid/m;
-      int j = mid%m;
-      if(matrix[i][j] == target)
-        System.out.println(i+ "" +j);
-      if(matrix[i][j]<target)
-        low=mid+1;
+    int high = (n * m) - 1;
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      int i = mid / m;
+      int j = mid % m;
+      if (matrix[i][j] == target)
+        System.out.println(i + "" + j);
+      if (matrix[i][j] < target)
+        low = mid + 1;
       else
-        high=mid-1;
+        high = mid - 1;
     }
   }
+
+  public void findElementIn2DRowWiseColumnWiseSortedMatrix(int[][] matrix, int target) {
+    int n = matrix.length;
+    int m = matrix[0].length;
+    int row = 0;
+    int column = m - 1;
+    while (row < n && column >= 0) {
+      if (matrix[row][column] == target) {
+        System.out.println("row" + row + "column" + column);
+        break;
+      } else if (matrix[row][column] < target)
+        row++;
+      else column--;
+    }
+  }
+
 
   public void findPeakElementIn2DArray(int[][] matrix) {
     int n = matrix.length;
@@ -575,43 +621,33 @@ public class BinarySearchStriver {
       if (left < matrix[row][mid] && matrix[row][mid] > right) {
         System.out.println(matrix[row][mid]);
         break;
-      }
-      else if (left > matrix[row][mid])
+      } else if (left > matrix[row][mid])
         high = mid - 1;
       else
         low = mid + 1;
     }
   }
 
-  public void findMedianIn2DArray(int[][] matrix){
-    /*min and max is in 1st and last column
-    mid
-            reqmedian
-    countallelementslessequalthanmid using binary search and upper bound -
-            checkifitslessthanequaltorequired
-    if its less than required,  our element lies on the right
-    else it lies on the left
-            */
+  public void findMedianIn2DArray(int[][] matrix) {
     int n = matrix.length;
     int m = matrix[0].length;
     int low = Integer.MAX_VALUE;
     int high = Integer.MIN_VALUE;
-    for(int i = 0;i<n;i++)
-    {
-      low = Math.min(low,matrix[i][0]);
-      high = Math.max(high,matrix[i][m-1]);
+    for (int i = 0; i < n; i++) {
+      low = Math.min(low, matrix[i][0]);
+      high = Math.max(high, matrix[i][m - 1]);
     }
-    int requiredCount = (n*m)/2;
-    while(low<=high){
+    int requiredCount = (n * m) / 2;
+    while (low <= high) {
       int count = 0;
-      int mid = (low+high)/2;
-      for(int i = 0; i<n;i++){
-        count += countelementslessthanequaltomid(matrix[i],mid,m);
+      int mid = (low + high) / 2;
+      for (int i = 0; i < n; i++) {
+        count += countelementslessthanequaltomid(matrix[i], mid, m);
       }
-      if(count<=requiredCount)
-        low=mid+1;
+      if (count <= requiredCount)
+        low = mid + 1;
       else
-        high = mid-1;
+        high = mid - 1;
     }
     System.out.println("Meidan is " + low);
   }
@@ -628,6 +664,49 @@ public class BinarySearchStriver {
     }
     return low;
   }
+
+  public void painterPartitionProblem(int[] boards, int painters) {
+    int n = boards.length;
+    int low = boards[0];
+    int high = 0;
+    for (int i = 0; i < n; i++) {
+      low = Math.max(low, boards[i]);
+      high += boards[i];
+    }
+
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      if (countPainters(boards, mid) > painters) {
+        low = mid + 1;
+      } else high = mid - 1;
+    }
+    System.out.println(low);
+  }
+
+  private int countPainters(int[] boards, int mid) {
+    int count = 1;
+    int boardSum = 0;
+    for (int i = 0; i < boards.length; i++) {
+      if (boards[i] + boardSum <= mid)
+        boardSum += boards[i];
+      else {
+        count++;
+        boardSum = boards[i];
+      }
+    }
+    return count;
+  }
+
+  public void minimumMaximumDistanceBetweenGasStations(int[] stations, int newStation) {
+    int n = stations.length;
+    int distance = 0;
+    int spacing = 0;
+    for (int i = 1; i < n; i++) {
+      distance = Math.max(distance, stations[i] - stations[i - 1]);
+    }
+    spacing = (distance / ());
+  }
+
 
 }
 

@@ -94,11 +94,16 @@ public class Main {
     //binarySearchStriver.capacityToShipWithinDDays(new int[]{5,4,5,2,3,4,5,6},5);
     //binarySearchStriver.aggressiveCows(new int[]{4,2,1,3,6}, 5, 2);
     //binarySearchStriver.allocationOfBooks(new int[]{12,34,67,90},2);
+    //binarySearchStriver.splitArrayLargestSum(new int[]{1,2,3,4,5},3);
+    binarySearchStriver.painterPartitionProblem(new int[]{5, 5, 5, 5}, 2);
+
 
     //binarySearchStriver.rowWithMax1In2DArray(new int[][]{{1,1,1},{0,0,1},{0,0,0}}, 3, 3);
     //binarySearchStriver.searchInA2DMatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, 3, 4, 8);
+    //binarySearchStriver.findElementIn2DRowWiseColumnWiseSortedMatrix(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}},19);
     //binarySearchStriver.findPeakElementIn2DArray(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
-    binarySearchStriver.findMedianIn2DArray(new int[][]{{1, 3, 8}, {2, 3, 4}, {1, 2, 5}});
+    //binarySearchStriver.findMedianIn2DArray(new int[][]{{1, 3, 8}, {2, 3, 4}, {1, 2, 5}});
+
   }
 
   public static void bigBasket() {
