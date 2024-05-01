@@ -700,13 +700,18 @@ public class BinarySearchStriver {
   public void minimumMaximumDistanceBetweenGasStations(int[] stations, int newStation) {
     int n = stations.length;
     int distance = 0;
-    int spacing = 0;
-    for (int i = 1; i < n; i++) {
-      distance = Math.max(distance, stations[i] - stations[i - 1]);
+    double low = 0;
+    double high = 0;
+    for (int i = 0; i < n - 1; i++) {
+      high = Math.max(high, (double)(stations[i + 1] - stations[i]));
     }
-    spacing = (distance / ());
-  }
+   }
 
+   public void medianOfTwoSortedArrays(){
+
+   }
+
+   public void kthElementOfTwoSortedArrays(int[] arr1, int[] arr2){}
 
 }
 

@@ -3,17 +3,21 @@ package org.example;
 import org.example.Arrays.GeeksForGeeks.ArraysGFG;
 import org.example.Arrays.Striver.ArraysStriver;
 import org.example.Arrays.Striver.BinarySearchStriver;
+import org.example.Arrays.Striver.LinkedListStriver;
 import org.example.CompanyInterviews.BigBasket;
+import org.example.CompanyInterviews.Codeforces;
 import org.example.DSAMisc.Striver.StringsStriver;
+import org.example.DataStructures.Node;
 
 public class Main {
   public static void main(String[] args) {
     System.out.println("Let us begin!");
     //arrays();
-    binarySearch();
+    //binarySearch();
     //bigBasket();
     //strings();
     //arraysGFG();
+    linkedlist();
   }
 
 
@@ -71,7 +75,7 @@ public class Main {
 
   public static void binarySearch() {
     BinarySearchStriver binarySearchStriver = new BinarySearchStriver();
-   /* binarySearchStriver.binarySearch(new int[]{1, 4, 5, 8, 9, 10, 15, 23, 45, 89, 90}, 45);
+    binarySearchStriver.binarySearch(new int[]{1, 4, 5, 8, 9, 10, 15, 23, 45, 89, 90}, 45);
     binarySearchStriver.lowerBound(new int[]{1, 4, 5, 8, 9, 10, 15, 19, 23, 89, 90}, 45);
     binarySearchStriver.upperBound(new int[]{3, 5, 8, 9, 15, 19}, 9);
     binarySearchStriver.searchIndexPosition(new int[]{3, 5, 8, 9, 15, 19}, 7);
@@ -89,20 +93,27 @@ public class Main {
     binarySearchStriver.findNthRootOfANumber(4,256);
     binarySearchStriver.kokoEatingBananas2(new int[]{30,11,23,4,20},5);
     binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,3);
-    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,6); */
-    //binarySearchStriver.smallestDivisorGivenThreshold(new int[]{8,4,2,3},10);
-    //binarySearchStriver.capacityToShipWithinDDays(new int[]{5,4,5,2,3,4,5,6},5);
-    //binarySearchStriver.aggressiveCows(new int[]{4,2,1,3,6}, 5, 2);
-    //binarySearchStriver.allocationOfBooks(new int[]{12,34,67,90},2);
-    //binarySearchStriver.splitArrayLargestSum(new int[]{1,2,3,4,5},3);
+    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,6);
+    binarySearchStriver.smallestDivisorGivenThreshold(new int[]{8,4,2,3},10);
+    binarySearchStriver.capacityToShipWithinDDays(new int[]{5,4,5,2,3,4,5,6},5);
+    binarySearchStriver.aggressiveCows(new int[]{4,2,1,3,6}, 5, 2);
+    binarySearchStriver.allocationOfBooks(new int[]{12,34,67,90},2);
+    binarySearchStriver.splitArrayLargestSum(new int[]{1,2,3,4,5},3);
     binarySearchStriver.painterPartitionProblem(new int[]{5, 5, 5, 5}, 2);
+    binarySearchStriver.minimumMaximumDistanceBetweenGasStations(new int[]{1,2,3,4,5}, 4);
 
+    binarySearchStriver.rowWithMax1In2DArray(new int[][]{{1,1,1},{0,0,1},{0,0,0}}, 3, 3);
+    binarySearchStriver.searchInA2DMatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, 3, 4, 8);
+    binarySearchStriver.findElementIn2DRowWiseColumnWiseSortedMatrix(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}},19);
+    binarySearchStriver.findPeakElementIn2DArray(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+    binarySearchStriver.findMedianIn2DArray(new int[][]{{1, 3, 8}, {2, 3, 4}, {1, 2, 5}});
 
-    //binarySearchStriver.rowWithMax1In2DArray(new int[][]{{1,1,1},{0,0,1},{0,0,0}}, 3, 3);
-    //binarySearchStriver.searchInA2DMatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, 3, 4, 8);
-    //binarySearchStriver.findElementIn2DRowWiseColumnWiseSortedMatrix(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}},19);
-    //binarySearchStriver.findPeakElementIn2DArray(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
-    //binarySearchStriver.findMedianIn2DArray(new int[][]{{1, 3, 8}, {2, 3, 4}, {1, 2, 5}});
+    //Code forces
+    Codeforces codeforces = new Codeforces();
+    codeforces.canISquare(2, new int[]{1,2,3,4,5,6,7});
+    codeforces.buildingAnAquarium(7,9,new int[]{3,1,2,4,6,2,5});
+    codeforces.buildingAnAquarium(4,1,new int[]{1,4,3,4});
+    codeforces.buildingAnAquarium(6,1984,new int[]{2,6,5,9,1,8});
 
   }
 
@@ -124,6 +135,11 @@ public class Main {
     stringsStriver.reverseWordsInString("the sky is blue");
     stringsStriver.largestOddNumberInString("35427");
     stringsStriver.longestCommonPrefix(new String[]{"flower", "flow", "flight"});
+    stringsStriver.isIsomorphic("ab","ab");
+    stringsStriver.rotateString("abcde","cdeah");
+    stringsStriver.anagramsOfString("CATDE","ACTIVE");
+    stringsStriver.frequencySort("tree");
+
   }
 
   public static void arraysGFG() {
@@ -141,5 +157,18 @@ public class Main {
     arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 4, 45, 6, 0, 19}, 51);
     arrays.smallestSubArrayWithSumGreaterThanKValue(new int[]{1, 11, 100, 1, 0, 200, 3, 2, 1, 250}, 280);
     arrays.updateArrayInRange(new int[]{10, 30, 50, 70, 90}, new int[]{1, 1, 50});
+  }
+
+  public static void linkedlist(){
+    LinkedListStriver linkedListStriver = new LinkedListStriver();
+    Node head = linkedListStriver.convertArrayToLinkedList(new int[]{12,34,5,67,10});
+//    linkedListStriver.traverseALinkedList(head);
+//    linkedListStriver.lengthOfALinkedList(head);
+//    linkedListStriver.searchInALinkedList(head,67);
+//    linkedListStriver.deleteHeadNodeOfALinkedList(head);
+//    linkedListStriver.deleteTailNodeOfALinkedList(head);
+//    linkedListStriver.deleteKPositionOfALinkedList(head,4);
+//    linkedListStriver.deleteKValueOfALinkedList(head,15);
+    linkedListStriver.insertionInaLinkedList(head,50,6);
   }
 }

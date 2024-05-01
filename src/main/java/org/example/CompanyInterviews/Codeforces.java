@@ -1,9 +1,6 @@
 package org.example.CompanyInterviews;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Codeforces {
 
@@ -48,6 +45,53 @@ public class Codeforces {
         }
       }
     }
+  }
+
+  public void canISquare(int n, int[] arr) {
+    System.out.println(Arrays.toString(arr));
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+      sum = sum + arr[i];
+    }
+    int low = 1;
+    int high = sum / 2;
+    while (low <= high) {
+      int mid = (low + high) / 2;
+      int square = mid * mid;
+      if (square == sum)
+        System.out.println("yes");
+      if (square < sum) {
+        low = mid + 1;
+      } else
+        high = mid - 1;
+    }
+    System.out.println("no");
+  }
+
+  public void buildingAnAquarium(int columns, int waterCap, int[] coralHeight) {
+    int max = Integer.MIN_VALUE;
+    int min = Integer.MAX_VALUE;
+    for (int j : coralHeight) {
+      max = Math.max(max, j);
+      min = Math.min(min, j);
+    }
+    if(max*columns<waterCap)
+      max=waterCap;
+    while (min <= max) {
+      int actualSum = 0;
+      int mid = (min + max) / 2;
+      for (int i : coralHeight) {
+        int height = Math.min(mid, i);
+        actualSum += height;
+      }
+      int matrixsum = mid * columns;
+      if (matrixsum - actualSum <= waterCap) {
+        min = mid + 1;
+      } else {
+        max = mid - 1;
+      }
+    }
+    System.out.println(max);
   }
 }
 

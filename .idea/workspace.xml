@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1881e995-fa1f-47d3-beb3-cbe48264741c" name="Changes" comment="array medium 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataStructures/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/ArrayIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/ArrayIntuitions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/BinarySearchIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/BinarySearchIntuitions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
@@ -417,28 +420,78 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>595</line>
+          <line>594</line>
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>599</line>
+          <line>597</line>
           <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>601</line>
+          <line>599</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>683</line>
+          <line>679</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
-          <line>685</line>
+          <line>680</line>
           <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="177" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
