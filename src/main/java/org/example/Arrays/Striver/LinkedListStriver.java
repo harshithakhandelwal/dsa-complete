@@ -1,5 +1,6 @@
 package org.example.Arrays.Striver;
 
+import org.example.DataStructures.DoubleNode;
 import org.example.DataStructures.Node;
 
 public class LinkedListStriver {
@@ -127,10 +128,89 @@ public class LinkedListStriver {
         traverseALinkedList(head);
         return;
       }
-
       prev = temp;
       temp = temp.next;
     }
     traverseALinkedList(head);
   }
+
+  public DoubleNode<Integer> convertArrayToDoublyLinkedList(int[] arr){
+    DoubleNode<Integer> head = new DoubleNode<>(arr[0]);
+    head.back = null;
+    DoubleNode<Integer> mover = head;
+    for(int i = 1; i<arr.length;i++){
+     DoubleNode<Integer> temp = new DoubleNode<>(arr[i]);
+      mover.next =  temp;
+      temp.back = mover;
+      mover=temp;
+    }
+    System.out.println(head.data);
+    return head;
+  }
+
+  public void traverseADoublyLinkedList(DoubleNode<Integer> head){
+    DoubleNode<Integer> temp = head;
+    while(temp!=null){
+      System.out.print(temp.data + " ");
+      temp = temp.next;
+    }
+    System.out.println();
+    DoubleNode<Integer> current = head;
+    while(current!=null && current.next!=null){
+      current = current.next;
+    }
+    while (current!=null){
+      System.out.print(current.data+ " ");
+      current = current.back;
+    }
+  }
+
+  public void deleteInDoublyLinkedList(DoubleNode<Integer> head){
+    if(head==null) return;
+    else if(head.next==null && head.back==null)
+      System.out.println();
+    else {
+      head = head.next;
+      System.out.println(head.data);
+      head.back = null;
+      traverseADoublyLinkedList(head);
+      System.out.println();
+    }
+  }
+  public void deleteTailInDoublyLinkedList(DoubleNode<Integer> head){
+    if(head==null) return;
+    else if(head.next==null && head.back==null)
+      System.out.println();
+    else {
+      DoubleNode<Integer> current = head;
+      while (current!=null && current.next.next!=null)
+        current=current.next;
+      current.next = null;
+    }
+    traverseADoublyLinkedList(head);
+  }
+  public void deleteKthPositionInDoublyLinkedList(DoubleNode<Integer> head,int position){
+    traverseADoublyLinkedList(head);
+    System.out.println();
+    if(head==null) return;
+    if(position==1)
+      deleteInDoublyLinkedList(head);
+    if(position==5)
+      deleteTailInDoublyLinkedList(head);
+    else {
+      DoubleNode<Integer> current = head;
+      int count = 0;
+      while(current!=null){
+        count++;
+        if(position==count) {
+          current.back.next = current.next;
+          current.next.back = current.back;
+          break;
+        }
+        current=current.next;
+      }
+    }
+    traverseADoublyLinkedList(head);
+  }
+
 }

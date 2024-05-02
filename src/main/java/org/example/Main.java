@@ -7,6 +7,7 @@ import org.example.Arrays.Striver.LinkedListStriver;
 import org.example.CompanyInterviews.BigBasket;
 import org.example.CompanyInterviews.Codeforces;
 import org.example.DSAMisc.Striver.StringsStriver;
+import org.example.DataStructures.DoubleNode;
 import org.example.DataStructures.Node;
 
 public class Main {
@@ -161,7 +162,7 @@ public class Main {
 
   public static void linkedlist(){
     LinkedListStriver linkedListStriver = new LinkedListStriver();
-    Node head = linkedListStriver.convertArrayToLinkedList(new int[]{12,34,5,67,10});
+//    Node<Integer> head = linkedListStriver.convertArrayToLinkedList(new int[]{12,34,5,67,10});
 //    linkedListStriver.traverseALinkedList(head);
 //    linkedListStriver.lengthOfALinkedList(head);
 //    linkedListStriver.searchInALinkedList(head,67);
@@ -169,6 +170,14 @@ public class Main {
 //    linkedListStriver.deleteTailNodeOfALinkedList(head);
 //    linkedListStriver.deleteKPositionOfALinkedList(head,4);
 //    linkedListStriver.deleteKValueOfALinkedList(head,15);
-    linkedListStriver.insertionInaLinkedList(head,50,6);
+//    linkedListStriver.insertionInaLinkedList(head,50,6);
+
+    //DoublyLinkedList
+    DoubleNode<Integer> doubleHead = linkedListStriver.convertArrayToDoublyLinkedList(new int[] {34,56,7,8,9,4,6});
+//    linkedListStriver.traverseADoublyLinkedList(doubleHead);
+//    linkedListStriver.deleteInDoublyLinkedList(doubleHead);
+//    linkedListStriver.deleteTailInDoublyLinkedList(doubleHead);
+    linkedListStriver.deleteKthPositionInDoublyLinkedList(doubleHead,3);
   }
+
 }
