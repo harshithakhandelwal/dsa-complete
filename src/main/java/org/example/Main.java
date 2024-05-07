@@ -162,7 +162,7 @@ public class Main {
 
   public static void linkedlist(){
     LinkedListStriver linkedListStriver = new LinkedListStriver();
-//    Node<Integer> head = linkedListStriver.convertArrayToLinkedList(new int[]{12,34,5,67,10});
+    Node<Integer> head = linkedListStriver.convertArrayToLinkedList(new int[]{1,4,2,3,6});
 //    linkedListStriver.traverseALinkedList(head);
 //    linkedListStriver.lengthOfALinkedList(head);
 //    linkedListStriver.searchInALinkedList(head,67);
@@ -171,13 +171,29 @@ public class Main {
 //    linkedListStriver.deleteKPositionOfALinkedList(head,4);
 //    linkedListStriver.deleteKValueOfALinkedList(head,15);
 //    linkedListStriver.insertionInaLinkedList(head,50,6);
+//    linkedListStriver.reverseALinkedList(head);
+//    linkedListStriver.detectACycleInLinkedList();
+//    linkedListStriver.findStartingNodeOfaLoopInLinkedList();
+//   Node<Integer> newHead =  linkedListStriver.reverseALinkedListUsingRecursion(head);
+//   linkedListStriver.traverseALinkedList(newHead);
+//    linkedListStriver.checkIfLinkedListIsPalindromeOrNot(head);
+ //   linkedListStriver.removeNthNodeFromBackOfALinkedList(head,2);
+ //   linkedListStriver.deleteTheMiddleNodeFromLinkedList(head);
+    Node<Integer> newHead = linkedListStriver.sortElementsLinkedListUsingMergeSort(head);
+    linkedListStriver.traverseALinkedList(newHead);
+
+ //   linkedListStriver.oddEvenLinkedList(head);
+  //linkedListStriver.sortALinkedList(head);
 
     //DoublyLinkedList
-    DoubleNode<Integer> doubleHead = linkedListStriver.convertArrayToDoublyLinkedList(new int[] {34,56,7,8,9,4,6});
+ //   DoubleNode<Integer> doubleHead = linkedListStriver.convertArrayToDoublyLinkedList(new int[] {34,56,7,8,9,44});
 //    linkedListStriver.traverseADoublyLinkedList(doubleHead);
 //    linkedListStriver.deleteInDoublyLinkedList(doubleHead);
 //    linkedListStriver.deleteTailInDoublyLinkedList(doubleHead);
-    linkedListStriver.deleteKthPositionInDoublyLinkedList(doubleHead,3);
+//    linkedListStriver.deleteKthPositionInDoublyLinkedList(doubleHead,3);
+//    linkedListStriver.insertInDoublyLinkedList(doubleHead,3,3);
+//    linkedListStriver.reverseADoublyLinkedList(doubleHead);
+  //  linkedListStriver.findMiddleOfADoublyLinkedList(doubleHead);
   }
 
 }
