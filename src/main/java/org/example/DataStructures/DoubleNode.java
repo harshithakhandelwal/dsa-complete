@@ -11,4 +11,5 @@ public class DoubleNode<T> {
     this.next = null;
     this.back = null;
   }
+
 }

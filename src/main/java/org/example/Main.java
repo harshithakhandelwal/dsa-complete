@@ -3,6 +3,7 @@ package org.example;
 import org.example.Arrays.GeeksForGeeks.ArraysGFG;
 import org.example.Arrays.Striver.ArraysStriver;
 import org.example.Arrays.Striver.BinarySearchStriver;
+import org.example.Arrays.Striver.DesignABrowserHistory;
 import org.example.Arrays.Striver.LinkedListStriver;
 import org.example.CompanyInterviews.BigBasket;
 import org.example.CompanyInterviews.Codeforces;
@@ -91,30 +92,30 @@ public class Main {
     binarySearchStriver.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4});
 
     binarySearchStriver.findSquareRootOfANumberUsingBinarySearch(28);
-    binarySearchStriver.findNthRootOfANumber(4,256);
-    binarySearchStriver.kokoEatingBananas2(new int[]{30,11,23,4,20},5);
-    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,3);
-    binarySearchStriver.minimumDaysToMakeBouquets(8,new int[]{7,7,7,7,13,11,12,7},2,6);
-    binarySearchStriver.smallestDivisorGivenThreshold(new int[]{8,4,2,3},10);
-    binarySearchStriver.capacityToShipWithinDDays(new int[]{5,4,5,2,3,4,5,6},5);
-    binarySearchStriver.aggressiveCows(new int[]{4,2,1,3,6}, 5, 2);
-    binarySearchStriver.allocationOfBooks(new int[]{12,34,67,90},2);
-    binarySearchStriver.splitArrayLargestSum(new int[]{1,2,3,4,5},3);
+    binarySearchStriver.findNthRootOfANumber(4, 256);
+    binarySearchStriver.kokoEatingBananas2(new int[]{30, 11, 23, 4, 20}, 5);
+    binarySearchStriver.minimumDaysToMakeBouquets(8, new int[]{7, 7, 7, 7, 13, 11, 12, 7}, 2, 3);
+    binarySearchStriver.minimumDaysToMakeBouquets(8, new int[]{7, 7, 7, 7, 13, 11, 12, 7}, 2, 6);
+    binarySearchStriver.smallestDivisorGivenThreshold(new int[]{8, 4, 2, 3}, 10);
+    binarySearchStriver.capacityToShipWithinDDays(new int[]{5, 4, 5, 2, 3, 4, 5, 6}, 5);
+    binarySearchStriver.aggressiveCows(new int[]{4, 2, 1, 3, 6}, 5, 2);
+    binarySearchStriver.allocationOfBooks(new int[]{12, 34, 67, 90}, 2);
+    binarySearchStriver.splitArrayLargestSum(new int[]{1, 2, 3, 4, 5}, 3);
     binarySearchStriver.painterPartitionProblem(new int[]{5, 5, 5, 5}, 2);
-    binarySearchStriver.minimumMaximumDistanceBetweenGasStations(new int[]{1,2,3,4,5}, 4);
+    binarySearchStriver.minimumMaximumDistanceBetweenGasStations(new int[]{1, 2, 3, 4, 5}, 4);
 
-    binarySearchStriver.rowWithMax1In2DArray(new int[][]{{1,1,1},{0,0,1},{0,0,0}}, 3, 3);
-    binarySearchStriver.searchInA2DMatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, 3, 4, 8);
-    binarySearchStriver.findElementIn2DRowWiseColumnWiseSortedMatrix(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}},19);
-    binarySearchStriver.findPeakElementIn2DArray(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+    binarySearchStriver.rowWithMax1In2DArray(new int[][]{{1, 1, 1}, {0, 0, 1}, {0, 0, 0}}, 3, 3);
+    binarySearchStriver.searchInA2DMatrix(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}, 3, 4, 8);
+    binarySearchStriver.findElementIn2DRowWiseColumnWiseSortedMatrix(new int[][]{{1, 4, 7, 11, 15}, {2, 5, 8, 12, 19}, {3, 6, 9, 16, 22}, {10, 13, 14, 17, 24}, {18, 21, 23, 26, 30}}, 19);
+    binarySearchStriver.findPeakElementIn2DArray(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
     binarySearchStriver.findMedianIn2DArray(new int[][]{{1, 3, 8}, {2, 3, 4}, {1, 2, 5}});
 
     //Code forces
     Codeforces codeforces = new Codeforces();
-    codeforces.canISquare(2, new int[]{1,2,3,4,5,6,7});
-    codeforces.buildingAnAquarium(7,9,new int[]{3,1,2,4,6,2,5});
-    codeforces.buildingAnAquarium(4,1,new int[]{1,4,3,4});
-    codeforces.buildingAnAquarium(6,1984,new int[]{2,6,5,9,1,8});
+    codeforces.canISquare(2, new int[]{1, 2, 3, 4, 5, 6, 7});
+    codeforces.buildingAnAquarium(7, 9, new int[]{3, 1, 2, 4, 6, 2, 5});
+    codeforces.buildingAnAquarium(4, 1, new int[]{1, 4, 3, 4});
+    codeforces.buildingAnAquarium(6, 1984, new int[]{2, 6, 5, 9, 1, 8});
 
   }
 
@@ -136,9 +137,9 @@ public class Main {
     stringsStriver.reverseWordsInString("the sky is blue");
     stringsStriver.largestOddNumberInString("35427");
     stringsStriver.longestCommonPrefix(new String[]{"flower", "flow", "flight"});
-    stringsStriver.isIsomorphic("ab","ab");
-    stringsStriver.rotateString("abcde","cdeah");
-    stringsStriver.anagramsOfString("CATDE","ACTIVE");
+    stringsStriver.isIsomorphic("ab", "ab");
+    stringsStriver.rotateString("abcde", "cdeah");
+    stringsStriver.anagramsOfString("CATDE", "ACTIVE");
     stringsStriver.frequencySort("tree");
 
   }
@@ -160,40 +161,65 @@ public class Main {
     arrays.updateArrayInRange(new int[]{10, 30, 50, 70, 90}, new int[]{1, 1, 50});
   }
 
-  public static void linkedlist(){
-    LinkedListStriver linkedListStriver = new LinkedListStriver();
-    Node<Integer> head = linkedListStriver.convertArrayToLinkedList(new int[]{1,4,2,3,6});
-//    linkedListStriver.traverseALinkedList(head);
-//    linkedListStriver.lengthOfALinkedList(head);
-//    linkedListStriver.searchInALinkedList(head,67);
-//    linkedListStriver.deleteHeadNodeOfALinkedList(head);
-//    linkedListStriver.deleteTailNodeOfALinkedList(head);
-//    linkedListStriver.deleteKPositionOfALinkedList(head,4);
-//    linkedListStriver.deleteKValueOfALinkedList(head,15);
-//    linkedListStriver.insertionInaLinkedList(head,50,6);
-//    linkedListStriver.reverseALinkedList(head);
-//    linkedListStriver.detectACycleInLinkedList();
-//    linkedListStriver.findStartingNodeOfaLoopInLinkedList();
-//   Node<Integer> newHead =  linkedListStriver.reverseALinkedListUsingRecursion(head);
-//   linkedListStriver.traverseALinkedList(newHead);
-//    linkedListStriver.checkIfLinkedListIsPalindromeOrNot(head);
- //   linkedListStriver.removeNthNodeFromBackOfALinkedList(head,2);
- //   linkedListStriver.deleteTheMiddleNodeFromLinkedList(head);
-    Node<Integer> newHead = linkedListStriver.sortElementsLinkedListUsingMergeSort(head);
+  public static void linkedlist() {
+    /*LinkedListStriver linkedListStriver = new LinkedListStriver();
+    Node<Integer> head = linkedListStriver.convertArrayToLinkedList(new int[]{1, 2, 3, 4, 5});
+    linkedListStriver.traverseALinkedList(head);
+    linkedListStriver.lengthOfALinkedList(head);
+    linkedListStriver.searchInALinkedList(head, 67);
+    linkedListStriver.deleteHeadNodeOfALinkedList(head);
+    linkedListStriver.deleteTailNodeOfALinkedList(head);
+    linkedListStriver.deleteKPositionOfALinkedList(head, 4);
+    linkedListStriver.deleteKValueOfALinkedList(head, 15);
+    linkedListStriver.insertionInaLinkedList(head, 50, 6);
+    linkedListStriver.reverseALinkedList(head);
+    linkedListStriver.detectACycleInLinkedList();
+    linkedListStriver.findStartingNodeOfaLoopInLinkedList();
+    Node<Integer> newHead = linkedListStriver.reverseALinkedListUsingRecursion(head);
     linkedListStriver.traverseALinkedList(newHead);
+    linkedListStriver.checkIfLinkedListIsPalindromeOrNot(head);
+    linkedListStriver.removeNthNodeFromBackOfALinkedList(head, 2);
+    linkedListStriver.deleteTheMiddleNodeFromLinkedList(head);
+    Node<Integer> newHead1 = linkedListStriver.sortElementsLinkedListUsingMergeSort(head);
+    linkedListStriver.traverseALinkedList(newHead1);
+    linkedListStriver.oddEvenLinkedList(head);
+    linkedListStriver.sortALinkedList(head);
 
- //   linkedListStriver.oddEvenLinkedList(head);
-  //linkedListStriver.sortALinkedList(head);
+    linkedListStriver.intersectionOfTwoLists();
+    linkedListStriver.add1ToLinkedListNumber(head);
+    Node<Integer> head1 = linkedListStriver.convertArrayToLinkedList(new int[]{9, 9, 9});
+    Node<Integer> head2 = linkedListStriver.convertArrayToLinkedList(new int[]{9, 9});
+    linkedListStriver.addTwoNumbersAsLinkedList(head1, head2);
 
-    //DoublyLinkedList
- //   DoubleNode<Integer> doubleHead = linkedListStriver.convertArrayToDoublyLinkedList(new int[] {34,56,7,8,9,44});
-//    linkedListStriver.traverseADoublyLinkedList(doubleHead);
-//    linkedListStriver.deleteInDoublyLinkedList(doubleHead);
-//    linkedListStriver.deleteTailInDoublyLinkedList(doubleHead);
-//    linkedListStriver.deleteKthPositionInDoublyLinkedList(doubleHead,3);
-//    linkedListStriver.insertInDoublyLinkedList(doubleHead,3,3);
-//    linkedListStriver.reverseADoublyLinkedList(doubleHead);
-  //  linkedListStriver.findMiddleOfADoublyLinkedList(doubleHead);
+    linkedListStriver.reverseALinkedListInGroupOfK(head, 3);
+    linkedListStriver.rotateALinkedListByKPlaces(head, 9);
+
+    //  DoublyLinkedList
+    DoubleNode<Integer> doubleHead = linkedListStriver.convertArrayToDoublyLinkedList(new int[]{});
+    linkedListStriver.traverseADoublyLinkedList(doubleHead);
+    linkedListStriver.deleteInDoublyLinkedList(doubleHead);
+    linkedListStriver.deleteTailInDoublyLinkedList(doubleHead);
+    linkedListStriver.deleteKthPositionInDoublyLinkedList(doubleHead, 3);
+    linkedListStriver.insertInDoublyLinkedList(doubleHead, 3, 3);
+    linkedListStriver.reverseADoublyLinkedList(doubleHead);
+    linkedListStriver.findMiddleOfADoublyLinkedList(doubleHead);
+    linkedListStriver.deleteAllOccurrencesOfKeyInDLL(doubleHead, 2);
+    linkedListStriver.findPairsWithGivenSumInDLL(doubleHead, 5);
+    linkedListStriver.removeDuplicatesFromSortedDLL(doubleHead);
+    linkedListStriver.flattenABottomLinkedList();
+    linkedListStriver.cloneLLWithNextAndRandomListBrute();
+    linkedListStriver.cloneWithNextAndRandomLLOptimal();
+*/
+    DesignABrowserHistory browserHistory = new DesignABrowserHistory("TUF");
+    browserHistory.visit("google.com");
+    browserHistory.visit("instagram.com");
+    browserHistory.visit("facebook.com");
+    browserHistory.back(1);
+    browserHistory.back(1);
+    browserHistory.forward(1);
+    browserHistory.visit("TUF");
+    browserHistory.forward(2);
+    browserHistory.back(2);
+    browserHistory.back(7);
   }
-
 }
