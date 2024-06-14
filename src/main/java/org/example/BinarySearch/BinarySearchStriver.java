@@ -1,4 +1,4 @@
-package org.example.Arrays.Striver;
+package org.example.BinarySearch;
 
 import java.util.Arrays;
 

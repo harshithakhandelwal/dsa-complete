@@ -1,4 +1,4 @@
-package org.example.DSAMisc.Striver;
+package org.example.Basics;
 
 import java.util.*;
 

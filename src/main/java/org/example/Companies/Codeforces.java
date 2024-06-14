@@ -1,4 +1,4 @@
-package org.example.CompanyInterviews;
+package org.example.Companies;
 
 import java.util.*;
 

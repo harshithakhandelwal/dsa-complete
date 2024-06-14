@@ -1,4 +1,4 @@
-package org.example.DataStructures;
+package org.example.LinkedList;
 
 public class DoubleNode<T> {
   public T data;

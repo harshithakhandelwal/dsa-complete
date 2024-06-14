@@ -1,10 +1,10 @@
-package org.example.Arrays.Striver;
+package org.example.Arrays;
 
-import org.example.CompanyInterviews.BigBasket;
+import org.example.Companies.BigBasket;
 
 import java.util.*;
 
-import static org.example.CompanyInterviews.BigBasket.reverse;
+import static org.example.Companies.BigBasket.reverse;
 
 public class ArraysStriver {
   public static void swap(int[] arr, int i, int j) {

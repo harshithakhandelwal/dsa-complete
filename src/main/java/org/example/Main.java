@@ -1,15 +1,13 @@
 package org.example;
 
-import org.example.Arrays.GeeksForGeeks.ArraysGFG;
-import org.example.Arrays.Striver.ArraysStriver;
-import org.example.Arrays.Striver.BinarySearchStriver;
-import org.example.Arrays.Striver.DesignABrowserHistory;
-import org.example.Arrays.Striver.LinkedListStriver;
-import org.example.CompanyInterviews.BigBasket;
-import org.example.CompanyInterviews.Codeforces;
-import org.example.DSAMisc.Striver.StringsStriver;
-import org.example.DataStructures.DoubleNode;
-import org.example.DataStructures.Node;
+import org.example.Arrays.ArraysGFG;
+import org.example.Arrays.ArraysStriver;
+import org.example.Arrays.Striver.*;
+import org.example.Companies.BigBasket;
+import org.example.Companies.Codeforces;
+import org.example.Basics.StringsStriver;
+import org.example.BinarySearch.BinarySearchStriver;
+import org.example.Striver.RecursionStriver;
 
 public class Main {
   public static void main(String[] args) {
@@ -210,16 +208,32 @@ public class Main {
     linkedListStriver.cloneLLWithNextAndRandomListBrute();
     linkedListStriver.cloneWithNextAndRandomLLOptimal();
 */
-    DesignABrowserHistory browserHistory = new DesignABrowserHistory("TUF");
-    browserHistory.visit("google.com");
-    browserHistory.visit("instagram.com");
-    browserHistory.visit("facebook.com");
-    browserHistory.back(1);
-    browserHistory.back(1);
-    browserHistory.forward(1);
-    browserHistory.visit("TUF");
-    browserHistory.forward(2);
-    browserHistory.back(2);
-    browserHistory.back(7);
+//    DesignABrowserHistory browserHistory = new DesignABrowserHistory("TUF");
+//    browserHistory.visit("google.com");
+//    browserHistory.visit("instagram.com");
+//    browserHistory.visit("facebook.com");
+//    browserHistory.back(1);
+//    browserHistory.back(1);
+//    browserHistory.forward(1);
+//    browserHistory.visit("TUF");
+//    browserHistory.forward(2);
+//    browserHistory.back(2);
+//    browserHistory.back(7);
+
+
+    RecursionStriver recursionStriver = new RecursionStriver();
+/*    recursionStriver.stringToIntegerAtoi("  -12345hb");
+    recursionStriver.generateAllBinaryStringsWithoutConsecutive1s(4);
+    double ans = recursionStriver.powerOfANumber(2,4);
+    System.out.println(ans);*/
+    //recursionStriver.countGoodNumbers(6798);
+   // recursionStriver.sortStackUsingRecursion();
+   // recursionStriver.reverseStackUsingRecursion();
+    //recursionStriver.binarySearchUsingRecursion(new int[]{1,2,3,4,6,7,8,9},6);
+   //   recursionStriver.reverseStringUsingRecursion("abcde");
+    //  recursionStriver.checkIfStringIsAPalindrome("malayalam");
+    //recursionStriver.generateParentheses(3);
+    recursionStriver.printAllSubsequencesPowerSet("abc");
   }
+
 }

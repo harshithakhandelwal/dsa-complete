@@ -1,6 +1,4 @@
-package org.example.Arrays.Striver;
-
-import org.example.DataStructures.DoubleNode;
+package org.example.LinkedList;
 
 public class DesignABrowserHistory {
   DoubleNode<String> current;

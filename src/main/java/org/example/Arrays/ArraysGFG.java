@@ -1,4 +1,4 @@
-package org.example.Arrays.GeeksForGeeks;
+package org.example.Arrays;
 
 import java.util.Arrays;
 

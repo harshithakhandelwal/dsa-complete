@@ -1,13 +1,8 @@
-package org.example.Arrays.Striver;
+package org.example.LinkedList;
 
-import org.example.DataStructures.DoubleNode;
-import org.example.DataStructures.Node;
-
-import java.rmi.UnexpectedException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Objects;
-import java.util.PriorityQueue;
 
 public class LinkedListStriver {
 
