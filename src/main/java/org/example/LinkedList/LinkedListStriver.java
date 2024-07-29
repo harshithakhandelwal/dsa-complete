@@ -315,7 +315,6 @@ public class LinkedListStriver {
   }
 
   public Node<Integer> reverseALinkedListUsingRecursion(Node<Integer> head) {
-    Node<Integer> temp = head;
     if (head == null || head.next == null)
       return head;
     Node<Integer> newHead = reverseALinkedListUsingRecursion(head.next);
@@ -341,7 +340,6 @@ public class LinkedListStriver {
 
     Node<Integer> slow = head;
     Node fast = head;
-    int count = 0;
     while (fast != null && fast.next != null) {
       slow = slow.next;
       fast = fast.next.next;
@@ -823,10 +821,6 @@ public class LinkedListStriver {
     return dummy.back;
   }
 
-  public Node<Integer> mergeKSortedLists(){
-    //
-    return null;
-  }
 
   public void cloneLLWithNextAndRandomListBrute(){
     //back is random here!

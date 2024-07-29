@@ -2,12 +2,17 @@ package org.example;
 
 import org.example.Arrays.ArraysGFG;
 import org.example.Arrays.ArraysStriver;
-import org.example.Arrays.Striver.*;
 import org.example.Companies.BigBasket;
 import org.example.Companies.Codeforces;
 import org.example.Basics.StringsStriver;
 import org.example.BinarySearch.BinarySearchStriver;
-import org.example.Striver.RecursionStriver;
+import org.example.LinkedList.DesignABrowserHistory;
+import org.example.LinkedList.DoubleNode;
+import org.example.LinkedList.LinkedListStriver;
+import org.example.LinkedList.Node;
+import org.example.Recursion.RecursionStriver;
+import org.example.StacksAndQueues.Queues;
+import org.example.StacksAndQueues.Stacks;
 
 public class Main {
   public static void main(String[] args) {
@@ -17,7 +22,9 @@ public class Main {
     //bigBasket();
     //strings();
     //arraysGFG();
-    linkedlist();
+    // linkedlist();
+    //recursion();
+    stacksAndQueues();
   }
 
 
@@ -160,7 +167,7 @@ public class Main {
   }
 
   public static void linkedlist() {
-    /*LinkedListStriver linkedListStriver = new LinkedListStriver();
+    LinkedListStriver linkedListStriver = new LinkedListStriver();
     Node<Integer> head = linkedListStriver.convertArrayToLinkedList(new int[]{1, 2, 3, 4, 5});
     linkedListStriver.traverseALinkedList(head);
     linkedListStriver.lengthOfALinkedList(head);
@@ -207,33 +214,69 @@ public class Main {
     linkedListStriver.flattenABottomLinkedList();
     linkedListStriver.cloneLLWithNextAndRandomListBrute();
     linkedListStriver.cloneWithNextAndRandomLLOptimal();
-*/
-//    DesignABrowserHistory browserHistory = new DesignABrowserHistory("TUF");
-//    browserHistory.visit("google.com");
-//    browserHistory.visit("instagram.com");
-//    browserHistory.visit("facebook.com");
-//    browserHistory.back(1);
-//    browserHistory.back(1);
-//    browserHistory.forward(1);
-//    browserHistory.visit("TUF");
-//    browserHistory.forward(2);
-//    browserHistory.back(2);
-//    browserHistory.back(7);
 
-
-    RecursionStriver recursionStriver = new RecursionStriver();
-/*    recursionStriver.stringToIntegerAtoi("  -12345hb");
-    recursionStriver.generateAllBinaryStringsWithoutConsecutive1s(4);
-    double ans = recursionStriver.powerOfANumber(2,4);
-    System.out.println(ans);*/
-    //recursionStriver.countGoodNumbers(6798);
-   // recursionStriver.sortStackUsingRecursion();
-   // recursionStriver.reverseStackUsingRecursion();
-    //recursionStriver.binarySearchUsingRecursion(new int[]{1,2,3,4,6,7,8,9},6);
-   //   recursionStriver.reverseStringUsingRecursion("abcde");
-    //  recursionStriver.checkIfStringIsAPalindrome("malayalam");
-    //recursionStriver.generateParentheses(3);
-    recursionStriver.printAllSubsequencesPowerSet("abc");
+    DesignABrowserHistory browserHistory = new DesignABrowserHistory("TUF");
+    browserHistory.visit("google.com");
+    browserHistory.visit("instagram.com");
+    browserHistory.visit("facebook.com");
+    browserHistory.back(1);
+    browserHistory.back(1);
+    browserHistory.forward(1);
+    browserHistory.visit("TUF");
+    browserHistory.forward(2);
+    browserHistory.back(2);
+    browserHistory.back(7);
   }
+
+  public static void recursion() {
+    RecursionStriver recursionStriver = new RecursionStriver();
+    recursionStriver.stringToIntegerAtoi("  -12345hb");
+    recursionStriver.generateAllBinaryStringsWithoutConsecutive1s(4);
+    recursionStriver.powerOfANumber(2, 4);
+    recursionStriver.countGoodNumbers(6798);
+    recursionStriver.sortStackUsingRecursion();
+    recursionStriver.reverseStackUsingRecursion();
+    recursionStriver.binarySearchUsingRecursion(new int[]{1, 2, 3, 4, 6, 7, 8, 9}, 6);
+    recursionStriver.reverseStringUsingRecursion("abcde");
+    recursionStriver.checkIfStringIsAPalindrome("malayalam");
+    recursionStriver.generateParentheses(3);
+    recursionStriver.printAllSubsequencesPowerSet("abc");
+    recursionStriver.countAllSubsequencesWithSumK(new int[]{5, 2, 3, 10, 6, 8}, 10);
+    recursionStriver.combinationSum(new int[]{2, 3, 6, 7}, 7);
+    recursionStriver.combinationSumTwo(new int[]{1, 1, 1, 2, 2}, 4);
+    recursionStriver.subsetSum(new int[]{3, 2, 1});
+    recursionStriver.subsetTwo(new int[]{1, 2, 2});
+    recursionStriver.combinationSumThree(4, 10);
+    recursionStriver.phoneNumberCombinations("345");
+    recursionStriver.generatePalindromePartitions("aab");
+    recursionStriver.wordSearchOnABoard("ABCCEG");
+    recursionStriver.solveNQueens(4);
+    recursionStriver.ratInAMaze(4, new int[][]{{1, 0, 0, 0},
+            {1, 1, 0, 1},
+            {1, 1, 0, 0},
+            {0, 1, 1, 1}});
+  }
+
+  public static void stacksAndQueues(){
+
+    Stacks stacksStriver = new Stacks();
+    Queues queueStriver = new Queues();
+   //stacksStriver.implementStackUsingArrays(new int[]{1,2,3,4,5});
+   //  stacksStriver.implementStackUsingQueue();
+  //  queueStriver.implementationOfQueueUsingArrays();
+   // queueStriver.implementQueueUsingStacks();
+    //stacksStriver.implementStackUsingLinkedList();
+   // queueStriver.implementQueuesUsingLinkedList();
+  //  stacksStriver.checkParenthesis("[()]");
+  //  stacksStriver.implementMinStack();
+  //  stacksStriver.infixToPostfix("k+l-m*n+(o^p)*w/u/v*t+q");
+   // stacksStriver.prefixToInfix("*+AB-CD");
+    //stacksStriver.prefixTPostfix("*+AB-CD");
+   // stacksStriver.postfixToPrefix("AB+CD-*");
+//    stacksStriver.postfixToInfix("AB+CD-*");
+//    stacksStriver.nextGreaterElement(new int[]{3,4,5,1,2,7,9,11});
+//    stacksStriver.nextSmallestElement(new int[]{1,6,8,2,3,7,9,2});
+  }
+
 
 }

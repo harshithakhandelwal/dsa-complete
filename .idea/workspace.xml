@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1881e995-fa1f-47d3-beb3-cbe48264741c" name="Changes" comment="&quot;doubly linked list&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Intuitions/RecursionIntutions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Queues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListIntuitions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Striver/RecursionIntutions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionIntutions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Striver/RecursionStriver.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,15 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/Recursion" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/Striver" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/BinarySearch" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/Arrays" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/LinkedList" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -131,152 +147,152 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/BigBasket.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Companies/BigBasket.java</url>
           <line>75</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/ArraysStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/ArraysStriver.java</url>
           <line>764</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>286</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>289</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>291</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/GeeksForGeeks/ArraysGFG.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/ArraysGFG.java</url>
           <line>198</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>316</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>317</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>343</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>345</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>352</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>365</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>369</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>371</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>374</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>377</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>398</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>400</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>405</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>408</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>426</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>429</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>422</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>458</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>449</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>457</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>482</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>486</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>487</line>
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>489</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
@@ -284,62 +300,62 @@
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>485</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>473</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>472</line>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>476</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>474</line>
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>478</line>
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>516</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>519</line>
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>520</line>
           <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>506</line>
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>547</line>
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>549</line>
           <option name="timeStamp" value="132" />
         </line-breakpoint>
@@ -349,127 +365,127 @@
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>572</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>573</line>
           <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>575</line>
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>579</line>
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>581</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>612</line>
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>603</line>
           <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>608</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>610</line>
           <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>613</line>
           <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>615</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>628</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>623</line>
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>535</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>534</line>
           <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>594</line>
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>597</line>
           <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>599</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>679</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/BinarySearchStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java</url>
           <line>680</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java</url>
           <line>83</line>
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java</url>
           <line>84</line>
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java</url>
           <line>86</line>
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java</url>
           <line>87</line>
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CompanyInterviews/Codeforces.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java</url>
           <line>90</line>
           <option name="timeStamp" value="169" />
         </line-breakpoint>
@@ -479,22 +495,22 @@
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Basics/StringsStriver.java</url>
           <line>71</line>
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Basics/StringsStriver.java</url>
           <line>73</line>
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Basics/StringsStriver.java</url>
           <line>110</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/DSAMisc/Striver/StringsStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Basics/StringsStriver.java</url>
           <line>112</line>
           <option name="timeStamp" value="177" />
         </line-breakpoint>
@@ -509,12 +525,12 @@
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>318</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>319</line>
           <option name="timeStamp" value="182" />
         </line-breakpoint>
@@ -524,27 +540,27 @@
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>518</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>519</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>520</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>521</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>522</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
@@ -554,119 +570,174 @@
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>805</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>806</line>
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/LinkedListStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java</url>
           <line>792</line>
           <option name="timeStamp" value="194" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>18</line>
           <option name="timeStamp" value="195" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>14</line>
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>36</line>
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>32</line>
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>214</line>
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>213</line>
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>195</line>
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>202</line>
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>204</line>
           <option name="timeStamp" value="205" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>228</line>
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>233</line>
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>234</line>
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>238</line>
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>241</line>
           <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>256</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>246</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>251</line>
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>258</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>252</line>
           <option name="timeStamp" value="224" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Arrays/Striver/RecursionStriver.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
           <line>71</line>
           <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
+          <line>355</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
+          <line>354</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
+          <line>359</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
+          <line>361</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
+          <line>360</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java</url>
+          <line>358</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="236" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

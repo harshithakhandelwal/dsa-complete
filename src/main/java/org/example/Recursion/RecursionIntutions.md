@@ -12,4 +12,4 @@
 9. **checkIfStringIsAPalindrome("malayalam");**—based on reversed string check if its palindrome.
 10. **generateParentheses(3);** - for a given number n , if total string length is n*2, we stop, otherwise if left bracket is less than n, we recursively generate bracket, and append "(" to it, else if right is less than left, we recursively generate ")" and append to string and add it to results.
 11. **printAllSubsequencesPowerSet("abc");** - if count equals length of S, we stop, else, we recursively generate a power set, by appending element at each index, and then without appending any element at each index.
-12. **printAllSubsequencesPowerSet({1,2,3});**
+12. **printAllSubsequencesPowerSet({1,2,3});** - 
