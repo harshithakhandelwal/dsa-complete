@@ -278,11 +278,97 @@ public class Stacks {
         else nse[i] = -1;
 
       stack.push(arr[i%n]);
+
     }
     System.out.println(count);
     System.out.println(Arrays.toString(nse));
   }
 
+  public int trap(int[] height) {
+    int total = 0;
+    for(int i =0;i<height.length;i++){
+      int j=i;
+      int leftmax=0;
+      int rightmax=0;
+      while(j>=0){
+        leftmax= Math.max(leftmax,height[j]);
+        j--;
+      }
+      j=i;
+      while(j<height.length){
+        rightmax= Math.max(rightmax,height[j]);
+        j++;
+      }
+      total += Math.min(rightmax,leftmax)-height[i];
+    }
+    return total;
+  }
+
+
+    public int sumSubarrayMins(int[] arr) {
+      int n = arr.length;
+      long result = 0;
+      long mod = 1_000_000_007;
+      int[] ple = new int[n];
+      int[] nle = new int[n];
+      Arrays.fill(ple,-1);
+      Arrays.fill(nle,n);
+      Stack<Integer> stack = new Stack<>();
+      for(int i=0;i<n;i++){
+        while(!stack.isEmpty() && arr[stack.peek()] >= arr[i]){
+          stack.pop();
+        }
+        if(!stack.isEmpty()){
+          ple[i]=stack.peek();
+        }
+        stack.push(i);
+      }
+      stack.clear();
+      for(int i = 0; i < n; i++) {
+        while (!stack.isEmpty() && arr[stack.peek()] > arr[i]) {
+          nle[stack.pop()] = i;
+        }
+        stack.push(i);
+      }
+      for (int i = 0; i < n; i++) {
+        long count = (long) (i - ple[i]) * (nle[i] - i) % mod;
+        result = (result + count * arr[i] % mod) % mod;
+      }
+      return (int) result;
+  }
+
+
+    public int[] asteroidCollision(int[] asteroids) {
+      Stack<Integer> stack = new Stack<>();
+      for(int asteroid : asteroids){
+        boolean isDestroyed = false;
+        while(!stack.isEmpty() && stack.peek()>0 && asteroid<0){
+          int top = stack.peek();
+          if(Math.abs(asteroid)>Math.abs(top)){
+            stack.pop();
+          }
+          else if(Math.abs(asteroid)==Math.abs(top)){
+            isDestroyed=true;
+            stack.pop();
+            break;
+          }
+          else{
+            isDestroyed = true;
+            break;
+          }
+        }
+        if(!isDestroyed)
+        {
+          stack.push(asteroid);
+        }
+
+      }
+      int[] result = new int[stack.size()];
+      for (int i = stack.size() - 1; i >= 0; i--) {
+        result[i] = stack.pop();
+      }
+      return result;
+  }
   static class minstack {
     Stack<Integer> stack = new Stack<>();
     Stack<Integer> minstack = new Stack<>();

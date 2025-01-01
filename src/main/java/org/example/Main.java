@@ -13,6 +13,11 @@ import org.example.LinkedList.Node;
 import org.example.Recursion.RecursionStriver;
 import org.example.StacksAndQueues.Queues;
 import org.example.StacksAndQueues.Stacks;
+import org.example.trees.TreeNode;
+import org.example.trees.Trees;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
@@ -24,7 +29,8 @@ public class Main {
     //arraysGFG();
     // linkedlist();
     //recursion();
-    stacksAndQueues();
+   // stacksAndQueues();
+    trees();
   }
 
 
@@ -257,25 +263,49 @@ public class Main {
             {0, 1, 1, 1}});
   }
 
-  public static void stacksAndQueues(){
+  public static void stacksAndQueues() {
 
     Stacks stacksStriver = new Stacks();
     Queues queueStriver = new Queues();
-   //stacksStriver.implementStackUsingArrays(new int[]{1,2,3,4,5});
-   //  stacksStriver.implementStackUsingQueue();
-  //  queueStriver.implementationOfQueueUsingArrays();
-   // queueStriver.implementQueueUsingStacks();
-    //stacksStriver.implementStackUsingLinkedList();
-   // queueStriver.implementQueuesUsingLinkedList();
-  //  stacksStriver.checkParenthesis("[()]");
-  //  stacksStriver.implementMinStack();
-  //  stacksStriver.infixToPostfix("k+l-m*n+(o^p)*w/u/v*t+q");
-   // stacksStriver.prefixToInfix("*+AB-CD");
-    //stacksStriver.prefixTPostfix("*+AB-CD");
-   // stacksStriver.postfixToPrefix("AB+CD-*");
-//    stacksStriver.postfixToInfix("AB+CD-*");
-//    stacksStriver.nextGreaterElement(new int[]{3,4,5,1,2,7,9,11});
-//    stacksStriver.nextSmallestElement(new int[]{1,6,8,2,3,7,9,2});
+    stacksStriver.implementStackUsingArrays(new int[]{1, 2, 3, 4, 5});
+    stacksStriver.implementStackUsingQueue();
+    queueStriver.implementationOfQueueUsingArrays();
+    queueStriver.implementQueueUsingStacks();
+    stacksStriver.implementStackUsingLinkedList();
+    queueStriver.implementQueuesUsingLinkedList();
+    stacksStriver.checkParenthesis("[()]");
+    stacksStriver.implementMinStack();
+    stacksStriver.infixToPostfix("k+l-m*n+(o^p)*w/u/v*t+q");
+    stacksStriver.prefixToInfix("*+AB-CD");
+    stacksStriver.prefixTPostfix("*+AB-CD");
+    stacksStriver.postfixToPrefix("AB+CD-*");
+    stacksStriver.postfixToInfix("AB+CD-*");
+    stacksStriver.nextGreaterElement(new int[]{3, 4, 5, 1, 2, 7, 9, 11});
+    stacksStriver.nextSmallestElement(new int[]{1, 6, 8, 2, 3, 7, 9, 2});
+    stacksStriver.asteroidCollision(new int[]{10, 2, -5});
+  }
+
+  public static void trees(){
+    // Creating a sample binary tree
+    TreeNode root = new TreeNode(1);
+    root.left = new TreeNode(2);
+    root.right = new TreeNode(3);
+    root.left.left = new TreeNode(4);
+    root.left.right = new TreeNode(5);
+    root.right.left = new TreeNode(6);
+    root.right.right = new TreeNode(7);
+
+    Trees trees = new Trees();
+   // trees.preOrderTraversal(root,new ArrayList<>());
+   // trees.postOrderTraversal(root,new ArrayList<>());
+   // trees.inOrderTraversal(root,new ArrayList<>());
+   /* trees.levelOrderTraversal(root);
+    trees.iterativePreorderTraversal(root,new ArrayList<>());
+    trees.iterativeInorderTraversal(root);
+    trees.postOrderTraversalUsing2Stack(root);*/
+    trees.heightOfABinaryTree(root);
+    trees.checkIfTwoTreesAreIdenticalOrNot(root,root);
+
   }
 
 
