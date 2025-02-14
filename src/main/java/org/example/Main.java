@@ -6,10 +6,12 @@ import org.example.Companies.BigBasket;
 import org.example.Companies.Codeforces;
 import org.example.Basics.StringsStriver;
 import org.example.BinarySearch.BinarySearchStriver;
+import org.example.DynamicProgramming.DPgfg;
 import org.example.LinkedList.DesignABrowserHistory;
 import org.example.LinkedList.DoubleNode;
 import org.example.LinkedList.LinkedListStriver;
 import org.example.LinkedList.Node;
+import org.example.Mocks.MockInterview;
 import org.example.Recursion.RecursionStriver;
 import org.example.StacksAndQueues.Queues;
 import org.example.StacksAndQueues.Stacks;
@@ -17,6 +19,7 @@ import org.example.trees.TreeNode;
 import org.example.trees.Trees;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -30,7 +33,9 @@ public class Main {
     // linkedlist();
     //recursion();
    // stacksAndQueues();
-    trees();
+    //trees();
+   //dp();
+    Mocks();
   }
 
 
@@ -306,6 +311,21 @@ public class Main {
     trees.heightOfABinaryTree(root);
     trees.checkIfTwoTreesAreIdenticalOrNot(root,root);
 
+  }
+
+  public static void dp(){
+    DPgfg dPgfg = new DPgfg();
+    dPgfg.longestCommonSubsequence("AGTAB","GXQTAB");
+    dPgfg.editDistance("geek","gesek");
+
+  }
+
+  public static void Mocks(){
+    MockInterview mockInterview = new MockInterview();
+    mockInterview.reverseString();
+    mockInterview.sumOfArrayWithoutLoop();
+    mockInterview.determineHighestPeekForEach();
+    mockInterview.rottingOranges();
   }
 
 
