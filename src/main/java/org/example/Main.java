@@ -322,11 +322,21 @@ public class Main {
 
   public static void Mocks(){
     MockInterview mockInterview = new MockInterview();
-    mockInterview.reverseString();
+   /* mockInterview.reverseString();
     mockInterview.sumOfArrayWithoutLoop();
     mockInterview.determineHighestPeekForEach();
     mockInterview.rottingOranges();
+    mockInterview.processSentences();
+    mockInterview.findCommonCharacters();
+    mockInterview.reverseAnInteger();
+    mockInterview.binaryPrefixDivisibleByK();
+    mockInterview.firstUniqueCharacterInAString();
+    mockInterview.diamondMatrixSum();
+    mockInterview.rotateMatrixBy90();
+    mockInterview.boundarySumOfMatrix(); */
+    mockInterview.spiralBoundarySumOfMatrix();
   }
+
 
 
 }

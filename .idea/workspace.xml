@@ -4,47 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1881e995-fa1f-47d3-beb3-cbe48264741c" name="Changes" comment="latest commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DynamicProgramming/DPgfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Heaps/Heaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Mocks/MockInterview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TwoPointer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/graphs/GraphsStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1881e995-fa1f-47d3-beb3-cbe48264741c" name="Changes" comment="commit new changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Greedy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrayIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrayIntuitions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArraysGFG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArraysGFG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArraysStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArraysStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Basics/BitManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Basics/BitManipulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Basics/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Basics/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Basics/StringsStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Basics/StringsStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchIntuitions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BinarySearch/BinarySearchStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Companies/BigBasket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Companies/BigBasket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Companies/Codeforces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Graph theory" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/graphs/Graph theory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/DesignABrowserHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/DesignABrowserHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/DoubleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/DoubleNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListIntuitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListIntuitions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/LinkedListStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedList/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionIntutions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionIntutions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Recursion/RecursionStriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Queues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Queues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/Stacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StacksAndQueues/stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/trees/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/trees/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/trees/Trees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/trees/Trees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/trees/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/trees/Tuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mocks/MockInterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Mocks/MockInterview.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;harshithakhandelwal&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/harshithakhandelwal/dsa-complete.git&quot;,
+    &quot;accountId&quot;: &quot;a5f4cba3-9b3f-4dfc-8844-4f60237bdb3d&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ArrayIndexOutOfBoundsException.java" root0="SKIP_INSPECTION" />
   </component>
@@ -170,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735702840185</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit new changes">
+      <option name="closed" value="true" />
+      <created>1739531965165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739531965165</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +174,8 @@
     <MESSAGE value="&quot;doubly linked list&quot;" />
     <MESSAGE value="stacks and queues" />
     <MESSAGE value="latest commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="latest commit" />
+    <MESSAGE value="commit new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit new changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
